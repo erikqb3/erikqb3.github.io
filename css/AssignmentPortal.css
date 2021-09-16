@@ -62,3 +62,7 @@ footer {
   padding: 0.05px 0;
   margin-top: em;
 }
+
+#currentdate {
+  color: yellow;
+}
