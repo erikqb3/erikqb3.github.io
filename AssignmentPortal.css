@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&family=Orbitron&family=Playball&family=Press+Start+2P&display=swap');
+
 body {
-  background-color: lightcyan;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: white;
+  font-family: 'Chakra Petch', sans-serif;
+  /* font-family: 'Orbitron', sans-serif; */
 }
 
 h1,
@@ -14,14 +16,18 @@ footer {
 }
 
 h1 {
-  font-size: 3em;
-  padding-left: 2.7em;
+  font-size: 5em;
+  padding: 0.15em 0;
+  padding-left: 1.5em;
   margin-top: 0;
+  font-family: 'Playball', cursive;
+  font-weight: 100;
 }
 
 h2 {
   border-bottom: 1px solid #aaa;
   font-size: 2em;
+  font-weight: bold;
   padding-left: 4em;
   margin: 0;
 }
@@ -47,7 +53,7 @@ p > a:hover {
 ul {
   padding-left: 4.75em;
   font-size: 2em;
-  min-height: 298px;
+  min-height: 355px;
 }
 
 li > a:link,
@@ -56,16 +62,17 @@ li > a:hover {
   /* color: black; */
   text-decoration-line: none;
   cursor: pointer;
+  /* line-height: 1.5em; */
 }
 
 footer {
   /* position: fixed; */
   width: 100%;
-  bottom: 8px;
+  bottom: 4px;
   text-align: center;
   padding: 0.05px 0;
 }
 
 #lastUpdated {
-  color: yellow;
+  color: rgb(255, 166, 0);
 }
