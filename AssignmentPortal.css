@@ -55,7 +55,7 @@ ul {
   margin-bottom: 50px;
   padding-left: 4.75em;
   font-size: 1.75em;
-  min-height: 336px;
+  /* min-height: 336px; */
 }
 
 li > a:link,
@@ -70,11 +70,17 @@ li > a:hover {
 footer {
   /* position: fixed; */
   width: 100%;
-  bottom: 4px;
+  margin-top: 265px;
   text-align: center;
   padding: 0.05px 0;
 }
 
 #lastUpdated {
   color: rgb(255, 166, 0);
+}
+
+@media screen and (min-height: 918.688px) {
+  footer {
+    margin-top: 265px;
+  }
 }
