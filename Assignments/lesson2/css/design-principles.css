@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Nunito&display=swap');
+
 body {
   background-color: rgb(215, 222, 229);
 }
@@ -12,7 +14,7 @@ div#grid {
 div#principle1,
 div#principle2,
 div#principle3 {
-  margin: 0 auto;
+  margin: 50px auto;
   background-color: rgb(234, 234, 234);
 }
 div#principle1 {
@@ -30,10 +32,12 @@ h1.PTitle {
   background-color: navy;
   margin: 0;
   padding: 0.67em 0;
+  font-family: 'Nunito', sans-serif;
 }
 h2.company {
   text-align: center;
   margin-bottom: 0;
+  font-family: 'Nunito', sans-serif;
 }
 a:link,
 a:visited,
@@ -50,6 +54,14 @@ div.link {
 
 img {
   border: 1px solid black;
+}
+
+div#principle1 > p.descript,
+div#principle2 > p.descript,
+div#principle3 > p.descript {
+  /* font-family: 'Amatic SC', cursive; */
+  /* font-weight: bold;
+  font-size: 2em; */
 }
 
 @media screen and (max-width: 1920px) {
@@ -91,17 +103,20 @@ img {
   div#principle2,
   div#principle3 {
     width: 450px;
-    height: 675px;
+    height: 950px;
   }
   img {
-    width: 200px;
-    margin: 0px 125px;
+    width: 350px;
+    margin: 0px 50px;
     display: inblock;
     margin-top: 25px;
   }
   p.descript {
     width: 350px;
     margin: 15px 50px;
+  }
+  div#principle3 > p.descript {
+    margin: 22px 50px;
   }
   div.decorLine {
     width: 450px;
@@ -110,18 +125,22 @@ img {
   }
 }
 
-@media screen and (max-width: 770.4px) {
+@media screen and (max-width: 800px) {
   /*Half Screen*/
+  /* body {
+    background-color:red;
+  } */
   div#grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 50px;
+    grid-gap: 25px;
   }
   div#principle1,
   div#principle2,
   div#principle3 {
     width: 300px;
-    height: 620px;
+    height: 820px;
+    margin: 0 auto;
   }
   div#principle1 {
     grid-column: 1;
@@ -137,13 +156,17 @@ img {
   }
 
   img {
-    width: 150px;
-    margin: 0px 75px;
+    width: 250px;
+    margin: 0px 25px;
     display: inblock;
     margin-top: 25px;
   }
   p.descript {
     width: 250px;
+    margin: 15px 20px;
+  }
+
+  div#principle3 > p.descript {
     margin: 15px 20px;
   }
   div.decorLine {
@@ -153,7 +176,7 @@ img {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   /*Phone Screen*/
   div#grid {
     grid-template-columns: 1fr;
@@ -163,7 +186,7 @@ img {
   div#principle2,
   div#principle3 {
     width: 300px;
-    height: 570px;
+    height: 770px;
   }
   div#principle1 {
     grid-column: 1;
@@ -178,8 +201,8 @@ img {
     grid-row: 3;
   }
   img {
-    width: 150px;
-    margin: 0px 75px;
+    width: 250px;
+    margin: 0px 25px;
     display: block;
     margin-top: 25px;
   }
@@ -188,6 +211,10 @@ img {
     margin: 25px 20px;
     font-size: 00.75em;
   }
+  div#principle3 > p.descript {
+    margin: 25px 20px;
+  }
+
   div.decorLine {
     width: 300px;
     height: 15px;
