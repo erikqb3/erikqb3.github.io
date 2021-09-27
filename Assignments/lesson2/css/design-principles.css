@@ -3,6 +3,23 @@
 body {
   background-color: rgb(215, 222, 229);
 }
+header {
+  background-color: blue;
+  color: white;
+  border-radius: 15px;
+  padding: 0.75em 0;
+  padding-left: 1em;
+}
+
+header {
+  padding: 0.15em 0;
+  padding-left: 1.5em;
+  margin-top: 15px;
+  font-family: 'Playball', cursive;
+  font-weight: 100;
+  font-size: 1.35em;
+  text-align: center;
+}
 div#grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -62,6 +79,25 @@ div#principle3 > p.descript {
   /* font-family: 'Amatic SC', cursive; */
   /* font-weight: bold;
   font-size: 2em; */
+}
+
+footer {
+  background-color: blue;
+  color: white;
+  border-radius: 15px;
+  padding: 0.75em 0;
+  padding-left: 1em;
+  width: 100%;
+  margin-top: 25px;
+  text-align: center;
+  padding: 0.05px 0;
+}
+footer > p > a:visited,
+footer > p > a:link,
+footer > p > a:hover,
+footer > p > a:active {
+  color: white;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1920px) {
