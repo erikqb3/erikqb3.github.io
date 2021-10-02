@@ -1,46 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Snippet&display=swap');
 
 body {
+  /* width: 80%;
+  margin: 0 auto; */
+  background-color: #8fa5cb;
+}
+div#main {
   width: 80%;
   margin: 0 auto;
-  background-color: #8fa5cb;
+  background-color: white;
+}
+
+div#content {
+  padding: 15px;
+  margin: 0 auto;
 }
 
 #title {
   color: #f4db0f;
   font-family: 'Snippet', sans-serif;
-  background-color: #3052ce;
-  line-height: 2em;
+  background-color: #1b47e6;
+  font-size: 3em;
+  line-height: 4em;
+  padding: 15px;
 }
 
 nav > ul {
-  background-color: #66787b;
   color: #f4db0f;
-  font-weight: bold;
+  /* font-weight: bold; */
   display: flex;
   width: 100%;
   margin: 0 auto;
   list-style: none;
   padding: 0;
   line-height: 2em;
+  font-size: 2em;
 }
 nav > ul > li {
+  background-color: #66787b;
   display: block;
-  margin: 0 auto;
+  margin: 0 15px;
   text-align: center;
   width: 100%;
 }
-nav > ul > li > a:link,
-nav > ul > li > a:visited,
-nav > ul > li > a:hover,
-nav > ul > li > a:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
   width: 100%;
   display: block;
   color: #f4db0f;
   text-decoration: none;
 }
 nav > ul > li > a:hover {
-  background-color: #66787b;
+  background-color: #192f67;
 }
 
 div.colorScheme {
@@ -53,7 +66,7 @@ div.colorScheme {
 div#siteHeader {
   color: #f4db0f;
   font-weight: bold;
-  background-color: #3052ce;
+  background-color: #1b47e6;
   font-size: 40px;
   /* font-size: 1.5em; */
   font-family: 'Snippet', sans-serif;
@@ -115,10 +128,32 @@ div#siteHeader {
 
 #logo {
   margin: 0 auto;
-  width: 75%;
+  width: 25%;
   height: auto;
+}
+
+.profilePic {
+  width: 15%;
 }
 
 #theFonts {
   font-size: 2em;
+}
+
+footer {
+  background-color: #192f67;
+  color: #f4db0f;
+  text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    background-color: orange;
+  }
+  nav > ul {
+    display: block;
+  }
+  div.colorScheme {
+    height: auto;
+  }
 }
