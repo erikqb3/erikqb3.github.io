@@ -83,6 +83,7 @@ h2 {
 }
 
 .price_span {
+  /* vertical-align: top; */
   font-size: 45px;
 }
 
@@ -97,12 +98,19 @@ h2 {
 
 .sups {
   font-size: 25px;
-  vertical-align: top;
-  /* margin-top: 150px; */
+  /* vertical-align: center; */
+  margin-bottom: 50px;
+  vertical-align: 35%;
 }
 
 .icon_images {
   margin-top: 75px;
+}
+
+#personal_section,
+#business_section,
+#enterprise_section {
+  visibility: hidden;
 }
 
 @media screen and (max-width: 32.5em) {
