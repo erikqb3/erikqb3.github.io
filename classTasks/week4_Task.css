@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+body {
+  background-color: #cfcfcf;
+}
+
+#main-content {
+  background-color: white;
+  border-radius: 30px;
+  width: 35%;
+  height: 90vh;
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  justify-items: center;
+  grid-gap: 0;
+  box-shadow: 0px 0px 3px 3px silver;
+}
+
+.info-titles {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  color: #203751;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.info-titles2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  text-shadow: 0.25px 0.25px black;
+  color: #001b36;
+  margin-bottom: 5px;
+}
+
+.info {
+  font-family: 'Rubik', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #001b36;
+  text-align: center;
+}
+#head {
+  margin: 0 auto;
+}
+.headinglogo {
+  grid-column: 1;
+  grid-row: 1;
+  display: block;
+  padding-top: 30px;
+}
+
+.headingwriting {
+  font-family: 'Rubik', sans-serif;
+  grid-column: 1;
+  grid-row: 1;
+  display: block;
+}
+.headingname {
+  font-family: 'Rubik', sans-serif;
+  grid-column: 3;
+  grid-row: 1;
+  font-size: x-small;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.blue {
+  background-color: #001b36;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+#boston {
+  color: #203751;
+}
+
+#denver {
+  color: #203751;
+}
+
+.bosden {
+  font-family: 'Roboto', sans-serif;
+}
+
+.lightGrey {
+  background-color: #f1f1f1;
+  width: 100%;
+  text-align: center;
+  color: #001b36;
+}
+
+#date {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#flight {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#gate {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+#seat {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+#boarding-zone {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+#boarding-time {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+#den {
+  grid-column: 1;
+  grid-row: 2;
+}
+#plane {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#plane-img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+#bos {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#thank-you {
+  font-family: 'Rubik', sans-serif;
+  grid-column: 1/4;
+  grid-row: 6;
+}
+#barcode {
+  grid-column: 1 / span 3;
+  grid-row: 5;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.grey-text {
+  color: #001b36;
+  margin: 0;
+}
+
+@media screen and (max-width: 780px) {
+  /*half screen*/
+  #main-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 32.5em) {
+  /*mobile sreen*/
+  #main-content {
+    width: 100%;
+  }
+}

@@ -76,6 +76,11 @@ li > a:active {
   /* line-height: 1.5em; */
 }
 
+ul > p {
+  margin: 0;
+  font-size: 18px;
+}
+
 footer {
   /* position: fixed; */
   width: 100%;
