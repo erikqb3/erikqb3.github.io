@@ -62,16 +62,17 @@ nav#navBar > ul {
   margin: 0 auto;
   font-size: 15px;
   /* line-height: 5em; */
-  background-color: #66787b;
 }
 
 nav#navBar > ul > li {
   width: 100%;
+  background-color: #66787b;
   display: block;
   /* color: #f4db0f; */
   text-align: center;
-  padding: 15px 0;
   /* margin: 0 auto; */
+  line-height: 4em;
+  font-weight: bold;
   border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
 
@@ -79,13 +80,15 @@ nav#navBar > ul > li > a:link,
 nav#navBar > ul > li > a:visited,
 nav#navBar > ul > li > a:hover,
 nav#navBar > ul > li > a:active {
+  /* padding: 15px 0; */
   display: block;
   width: 100%;
   color: black;
   text-decoration: none;
 }
 nav#navBar > ul > li > a:hover {
-  width: 100%;
+  /* display: block; */
+  /* width: 100%; */
   background-color: #192f67;
   color: #f4db0f;
 }
@@ -100,35 +103,46 @@ nav#navBar > ul > li > a:hover {
 
 footer {
   background-color: #192f67;
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
-  height: 35vh;
-  display: block;
+  /* height: 35vh; */
+  /* display: block; */
 }
 
-#contactInfo_label {
-  padding-left: 15px;
+#contactInfo_holder {
+  padding-left: 20px;
   padding-top: 20px;
   margin-bottom: 10px;
   color: #f4db0f;
+  margin: 0;
+}
+
+#contactInfo_label {
+  margin: 0;
 }
 
 ul#contactInfo {
   margin: 0;
   list-style: none;
-  padding-left: 16px;
+  padding-left: 0;
   color: white;
 }
-/* 
-ul#contactInfo > li {
-  padding-left: none;
-} */
 
 #locationMap {
   display: block;
+  width: 90%;
+  height: 100px;
   margin: 25px auto;
   /* padding-bottom: 25px; */
+}
+
+@media screen and (max-width: 800px) {
+  #navMenuButton {
+    display: flex;
+    grid-column: 3;
+    grid-row: 1 / 3;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -157,32 +171,52 @@ ul#contactInfo > li {
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-}
-
-footer > img#locationMap {
-  grid-column: 1;
-  grid-row: 1/ 3;
-}
-footer > h4#contactInfo_label,
-footer > ul {
-  grid-column: 2;
-  grid-row: 1 / 2;
-}
-
-@media screen and (max-width: 800px) {
-  #navMenuButton {
-    display: flex;
-    grid-column: 3;
-    grid-row: 1 / 3;
+    grid-template-rows: 1fr 1fr;
   }
 
-  ul#socialMediaLinksi {
+  footer > img#locationMap {
+    grid-column: 1;
+    grid-row: 1/ 3;
+    width: 45%;
+    height: 200px;
+  }
+  footer > h4#contactInfo_label,
+  footer > ul {
+    grid-column: 2;
+    grid-row: 1 / 2;
+  }
+
+  #contactInfo_holder {
+    grid-column: 2;
+  }
+
+  #contactInfo_label {
+    margin: 0;
+  }
+
+  ul#contactInfo {
+    margin: 0;
     list-style: none;
+    padding-left: 0;
+    color: white;
+  }
+  ul#contactInfo > li {
+    margin: 20px 0;
+  }
+
+  ul#socialMediaLinks {
+    grid-column: 2;
+    grid-row: 2;
+    list-style: none;
+    display: flex;
+    padding: 0;
   }
 
   ul#socialMediaLinks > li > img {
+    display: flex;
     list-style: none;
-    width: 15px;
+    width: 50px;
+    margin: 0;
+    margin-left: 25px;
   }
 }
