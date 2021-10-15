@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+html,
+body {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+body {
+  background-color: grey;
+}
+
+#cardContent_holder {
+  background-image: url('team05-1/resource-1.jpg');
+}
+
+#gradient {
+  position: absolute;
+  background-image: linear-gradient(to bottom right, blue, red);
+  opacity: 0.5;
+}
+
+.color-filter {
+  opacity: 0.5;
+}
+
+/* width: 375px;
+} */
+
+div#cardContent_holder {
+  position: relative;
+  width: 375px;
+  margin: 0 auto;
+}
+
+img#photoBackground {
+  position: relative;
+  /* opacity: transparent; */
+  z-index: 1;
+  margin: 0 auto;
+  width: 375px;
+  /* display: none; */
+}
+
+img#left-icon {
+  position: absolute;
+  z-index: 3;
+  width: 25px;
+  left: 25px;
+  top: 35px;
+}
+img#right-icon {
+  position: absolute;
+  z-index: 3;
+  width: 25px;
+  right: 25px;
+  top: 35px;
+}
+
+/* #gradient {
+  position: absolute;
+  background-image: linear-gradient(to bottom right, blue, red);
+  opacity: 0.5;
+} */
+#main-text {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  font-size: 0.9em;
+  z-index: 2;
+  bottom: 100px;
+  color: white;
+  margin: 0 auto;
+  width: 95%;
+  letter-spacing: 0.03em;
+}
+
+section#main-text > h1 {
+  font-size: 2.5em;
+}
+div#lower-pictures {
+  /* justify-content: center;
+  align-items: center;
+  text-align: center; */
+  margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  height: auto;
+}
+
+img.circle-pictures {
+  margin: 0 auto;
+  z-index: 2;
+  width: 80px;
+  height: 80px;
+}
+h1,
+p {
+  margin: 0 1.4rem;
+}
+
+#career-description {
+  margin: 1em 1.4rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 90%;
+}
