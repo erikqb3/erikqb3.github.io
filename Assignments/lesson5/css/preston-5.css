@@ -92,13 +92,13 @@ nav#navBar > ul > li#currentTab {
 .centralContent {
   display: block;
   margin: 15px auto;
-  width: 75%;
+  width: 90%;
 }
 
 #contentHolder {
   background-color: white;
   height: 1000px;
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
 }
 h1 {
@@ -147,23 +147,23 @@ img.forecastIcon {
   width: 30px;
 }
 
-/*Main Article*/
+/*Main Articles*/
 .article {
   background-color: white;
   display: block;
 }
 
-div#mainArticle_text {
+div#mainArticles_content1 {
   display: block;
   width: 80%;
   margin: 0 auto;
 }
 
-div#mainArticle_text > h4 {
+div#mainArticles_text1 > h4 {
   padding-top: 15px;
   margin: 0;
 }
-div#mainArticle_text > p {
+div#mainArticles_text1 > p {
   padding-bottom: 10px;
   margin: 0;
 }
@@ -299,12 +299,15 @@ ul#socialMediaLinks {
     border: 1px solid black;
     width: 15%;
     position: absolute;
+    padding: 10px;
     top: 20px;
     left: 40px;
+    /* margin: 0 auto; */
   }
 
   h4#weatherSummary_header {
     margin-bottom: 10px;
+    margin-top: 0;
   }
 
   /*5DAYFORECAST*/
@@ -327,22 +330,30 @@ ul#socialMediaLinks {
   }
 
   /*Main Article*/
-  /* .article {
-    background-color: white;
-    display: block;
-  } */
+  .article {
+    /* background-color: white; */
+    display: flex;
+  }
 
-  div#mainArticle_text {
-    display: block;
+  div#mainArticles_content1 {
+    display: flex;
     width: 80%;
     margin: 0 auto;
   }
 
-  div#mainArticle_text > h4 {
+  /* p#mainArticles_text1 {
+    display: flex;
+    width: 80%;
+    color: red;
+    margin: 0 auto;
+    clear: both;
+  } */
+
+  div#mainArticles_text1 > h4 {
     padding-top: 15px;
-    margin: 0;
+    margin: 0 auto;
   }
-  div#mainArticle_text > p {
+  div#mainArticles_text1 > p {
     padding-bottom: 10px;
     margin: 0;
   }
@@ -350,8 +361,13 @@ ul#socialMediaLinks {
   .articleImg {
     /* display: initial; */
     /* width: 80%; */
+    /* z-index: 2; */
+    /* display: inline; */
     float: right;
+    margin-top: 40px;
+    margin-left: 10px;
     width: 100px;
+    /* clear: right; */
     /* height: 100px; */
     /* margin: 0px auto; */
     /* padding-bottom: 10px; */
@@ -369,6 +385,7 @@ ul#socialMediaLinks {
     grid-row: 1/ 3;
     width: 45%;
     height: 200px;
+    margin-top: 20px;
   }
   footer > h4#contactInfo_label,
   footer > ul {
