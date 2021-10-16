@@ -267,7 +267,7 @@ ul#socialMediaLinks {
 
   nav#navBar > ul {
     display: flex;
-    width: 75%;
+    width: 90%;
     border: 1px solid rgba(0, 0, 0, 0.3);
   }
 
