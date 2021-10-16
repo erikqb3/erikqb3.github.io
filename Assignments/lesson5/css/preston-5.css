@@ -237,6 +237,7 @@ ul#socialMediaLinks {
   #logo {
     width: 100px;
     height: 100px;
+    margin: 0;
     margin-left: 12%;
     /* margin: 0; */
   }
@@ -298,6 +299,7 @@ ul#socialMediaLinks {
   div#weatherSummaryContent_holder {
     border: 1px solid black;
     width: 15%;
+    display: block;
     position: absolute;
     padding: 10px;
     top: 20px;
@@ -323,9 +325,11 @@ ul#socialMediaLinks {
     /* margin-bottom: -15px; */
   }
   div#fiveDayForecaset_holder > ul > li {
+    margin: 0;
     margin: 10px 65px;
   }
   img.forecastIcon {
+    margin: 0 auto;
     width: 75px;
   }
 
