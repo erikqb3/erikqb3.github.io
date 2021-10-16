@@ -214,7 +214,7 @@ ul#contactInfo {
 
 ul#socialMediaLinks {
   list-style: none;
-  display: hidden;
+  display: none;
 }
 
 /* @media screen and (max-width: 800px) {
@@ -257,7 +257,7 @@ ul#socialMediaLinks {
 
   /*NAV*/
   #navMenuButton {
-    display: hidden;
+    display: none;
   }
 
   #nav_holder {
