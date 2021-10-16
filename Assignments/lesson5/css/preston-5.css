@@ -16,10 +16,11 @@ header {
 }
 
 #logo {
-  grid-column: 1;
+  /* grid-column: 1; */
   width: 50px;
   height: 50px;
   margin-left: 0;
+  /* margin-right: 12%; */
 }
 
 #name {
@@ -81,6 +82,10 @@ nav#navBar > ul > li > a:active {
 nav#navBar > ul > li > a:hover {
   background-color: #192f67;
   color: #f4db0f;
+}
+
+nav#navBar > ul > li#currentTab {
+  background-color: #9ab6bb;
 }
 
 /*MAIN CONTENT*/
@@ -245,12 +250,16 @@ ul#socialMediaLinks {
   #motto {
     grid-column: 2;
     grid-row: 2;
-    margin-top: -10;
+    margin-top: -10px;
     font-size: 1em;
     /* margin-bottom: 25px; */
   }
 
   /*NAV*/
+  #navMenuButton {
+    display: hidden;
+  }
+
   #nav_holder {
     width: 100%;
     background-color: #66787b;
