@@ -32,3 +32,11 @@ window.onload = (event) => {
     let lastModified = document.lastModified
     document.getElementById('currentdate').textContent = lastModified
 }
+
+WebFont.load({
+    google: {
+      families: [
+         'Chakra Petch',"Playball"
+      ]
+    }
+  });
