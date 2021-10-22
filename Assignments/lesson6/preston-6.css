@@ -9,22 +9,35 @@ header {
   color: #f4db0f;
   width: 100%;
   margin: 0;
-  display: flex;
+  /* display: flex; */
   /* justify-content: center; */
   align-items: center;
   padding: 5px 0;
 }
 
+header > div.centralContent {
+  display: grid;
+  grid-template-columns: auto 1fr 15%;
+  margin: 0 auto;
+}
+
 #logo {
-  /* grid-column: 1; */
+  grid-column: 1;
   /* display: flex; */
   /* position: absolute; */
   left: 0;
   width: 50px;
   height: 50px;
-  margin-left: 5%;
-  margin-right: 5%;
+  /* margin-left: 25%; */
+  justify-self: left;
+  /* margin-right: 5%; */
   /* margin-right: 12%; */
+}
+
+#headerInfo_holder {
+  margin-top: 10px;
+  grid-column: 2;
+  /* margin-left: -25%; */
 }
 
 #name {
@@ -42,15 +55,17 @@ header {
 }
 /*NAV*/
 #navMenuButton {
+  grid-column: 3;
   background-color: transparent;
   border: none;
   font-size: 1.5em;
   height: 1.5em;
   width: 1.5em;
+  margin-top: 10px;
   cursor: pointer;
   color: #f4db0f;
   padding: 0;
-  text-align: left;
+  justify-self: right;
   /* margin-left: 24%; */
 }
 
@@ -212,11 +227,15 @@ footer {
 }
 
 #contactInfo_holder {
-  padding-left: 20px;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
   padding-top: 20px;
-  margin-bottom: 10px;
+  /* margin-top: 10px; */
+  /* padding-left: 20px;
+  margin-bottom: 10px; */
   color: #f4db0f;
-  margin: 0;
+  /* margin: 0; */
 }
 
 #contactInfo_label {
@@ -257,6 +276,16 @@ ul#socialMediaLinks {
     margin: 0;
     margin-left: 5%;
   }
+
+  #locationMap {
+    display: block;
+    width: 90%;
+    height: 100px;
+    margin: 10px auto;
+    padding-bottom: 25px;
+    float: none;
+    /* padding-bottom: 25px; */
+  }
 }
 
 @media screen and (min-width: 1050px) {
@@ -272,7 +301,7 @@ ul#socialMediaLinks {
     width: 100px;
     height: 100px;
     margin: 0;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     /* margin: 0; */
   }
 
