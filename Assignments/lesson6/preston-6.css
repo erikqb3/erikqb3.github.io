@@ -50,7 +50,8 @@ header {
   cursor: pointer;
   color: #f4db0f;
   padding: 0;
-  margin-left: 24%;
+  text-align: left;
+  /* margin-left: 24%; */
 }
 
 .hidden {
@@ -251,6 +252,13 @@ ul#socialMediaLinks {
   }
 } */
 
+@media (min-width: 32.5em) {
+  #logo {
+    margin: 0;
+    margin-left: 5%;
+  }
+}
+
 @media screen and (min-width: 1050px) {
   /*tablet mode and up*/
 
@@ -332,7 +340,7 @@ ul#socialMediaLinks {
     padding: 30px;
     top: 50px;
     left: 40px;
-    font-size: 2em;
+    font-size: 1.5em;
     /* margin: 0 auto; */
   }
 
