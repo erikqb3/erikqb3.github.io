@@ -1,13 +1,7 @@
-// WebFont.load({
-//   google: {
-//     families: [
-//        'Snippet'
-//     ]
-//   }
-// });
-
-
-// WebFont.load();
+window.onload = (event) => {
+    let lastModified = document.lastModified
+    document.getElementById('currentdate').textContent = lastModified
+}
 
 let hamburger = document.querySelector("#navMenuButton");
 // console.log(hamburger);
