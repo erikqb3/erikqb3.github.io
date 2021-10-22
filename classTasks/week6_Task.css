@@ -24,8 +24,12 @@ p {
 }
 
 .top-section {
+  display: flex;
   border: 2px solid black;
   background-color: orange;
+}
+section#pancakes-header {
+  width: 100%;
 }
 
 /* fallback */
@@ -45,7 +49,7 @@ p {
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
-  display: inline-block;
+  display: flex;
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
@@ -53,6 +57,9 @@ p {
   -webkit-font-smoothing: antialiased;
   color: white;
   background-color: orange;
+  width: 7%;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes adjustSizeAndWiggle {
