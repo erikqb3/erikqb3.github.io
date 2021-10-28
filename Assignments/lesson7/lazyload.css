@@ -1,9 +1,14 @@
 body {
-  background-color: orange;
+  background-color: rgb(255, 166, 0);
   display: block;
   justify-content: center;
   margin: 0 auto;
   text-align: center;
+}
+
+img[data-src] {
+  filter: blur(0.2em);
+  border: 5px solid skyblue;
 }
 
 img {
@@ -12,4 +17,6 @@ img {
   display: block;
   width: 300px;
   height: 400px;
+  filter: blur(0em);
+  transition: filter 2s;
 }
