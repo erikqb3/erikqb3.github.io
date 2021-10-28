@@ -1,0 +1,15 @@
+body {
+  background-color: orange;
+  display: block;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  float: none;
+  margin: 5px auto;
+  display: block;
+  width: 300px;
+  height: 400px;
+}
