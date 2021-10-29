@@ -52,7 +52,7 @@ img {
   /*medium Screen*/
   #gallery_holder {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(12, 1fr);
   }
   #img1 {
     /*tall*/
