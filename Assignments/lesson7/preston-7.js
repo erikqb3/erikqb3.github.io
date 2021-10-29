@@ -13,7 +13,7 @@ function toggleNav() {
 }
 
 let startingWindowWidth = window.innerWidth;
-console.log(startingWindowWidth);
+// console.log(startingWindowWidth);
 if (startingWindowWidth > 1000) {
     // console.log("Hi! I'm Honest!");
     document.querySelector('#navBar').classList.remove('hidden');
@@ -39,3 +39,5 @@ prestonPancakes = () => {
 }
 
 prestonPancakes();
+console.log(window.location.href);
+console.log("Hellow!")

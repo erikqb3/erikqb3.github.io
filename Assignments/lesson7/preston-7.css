@@ -112,6 +112,14 @@ nav#navBar > ul > li#currentTab {
 }
 
 /*MAIN CONTENT*/
+h1.titleText {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2em;
+  margin-top: 25px;
+  margin-bottom: -25px;
+}
+
 .centralContent {
   display: block;
   margin: 15px auto;
