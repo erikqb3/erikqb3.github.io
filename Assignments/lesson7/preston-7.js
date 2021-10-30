@@ -1,3 +1,4 @@
+//JS FOR ALL HTML
 window.onload = (event) => {
     let lastModified = document.lastModified
     document.getElementById('currentdate').textContent = lastModified
@@ -26,6 +27,17 @@ else {
     document.querySelector('#socialMediaLinks').classList.add('hidden');
     // ocument.querySelector("#navMenuButton").classList.remove('hidden');
 }
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//JS FOR PRESON TAB ONLY
+if (window.location.href == "https://erikqb3.github.io/Assignments/lesson7/preston-7.html") {
+    prestonPancakes()
+    fiveDayForecast()
+}
+else{}
+
 
 prestonPancakes = () => {
     const date = new Date();
@@ -38,6 +50,25 @@ prestonPancakes = () => {
     }
 }
 
-prestonPancakes();
-console.log(window.location.href);
-console.log("Hellow!")
+function fiveDayForecast () {
+    const days = [
+        'Sun.', 'Mon.', 'Tues.', 'Wed.', 'Thurs.', 'Fri.', 'Sat.'
+    ]
+    const todaysDate = new Date();
+    let dayNumb = todaysDate.getDay()
+    let dayName = days[dayNumb];
+    const daysArray = document.querySelectorAll(".dayOfWeek")
+     
+    
+    
+    for (i=0; i < daysArray.length; i++) {
+        daysArray[i].innerHTML = days[dayNumb];
+        dayNumb += 1;
+        if (dayNumb > 6) {
+            dayNumb = 0;
+        }
+        console.log(dayNumb)
+    }
+
+}
+

@@ -74,6 +74,9 @@ header > div.centralContent {
 }
 
 nav#navBar > ul {
+  /* position: -webkit-sticky; Safari */
+  position: sticky;
+  top: 0;
   display: block;
   list-style: none;
   font-family: 'Snippet', sans-serif;
@@ -197,6 +200,15 @@ li > i.icon {
   font-size: 2em;
 }
 
+li > p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-family: 'Snippet', sans-serif;
+}
+
 /*Main Articles*/
 .article {
   background-color: white;
@@ -206,15 +218,21 @@ li > i.icon {
 div#mainArticles_content1 {
   display: block;
   width: 80%;
+  height: 500px;
   margin: 0 auto;
+}
+div#mainArticles_text1 {
+  width: 75%;
 }
 
 div#mainArticles_text1 > h4 {
   padding-top: 15px;
+  /* width: 75%; */
   margin: 0;
 }
 div#mainArticles_text1 > p {
   padding-bottom: 10px;
+  /* width: 75%; */
   margin: 0;
 }
 
@@ -442,7 +460,7 @@ ul#socialMediaLinks {
 
   div#mainArticles_text1 > h4 {
     padding-top: 15px;
-    margin: 0 auto;
+    margin: 0;
   }
   div#mainArticles_text1 > p {
     padding-bottom: 10px;
