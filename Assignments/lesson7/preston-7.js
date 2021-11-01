@@ -32,14 +32,13 @@ else {
 
 
 //JS FOR PRESON TAB ONLY
-if (window.location.href == "https://erikqb3.github.io/Assignments/lesson7/preston-7.html") {
+if ((window.location.href == "https://erikqb3.github.io/Assignments/lesson7/preston-7.html") || (window.location.href =="http://127.0.0.1:5502/Assignments/lesson7/preston-7.html")) {
     prestonPancakes()
     fiveDayForecast()
 }
 else{}
 
-
-prestonPancakes = () => {
+function prestonPancakes () {
     const date = new Date();
     const today = date.getDay();
     
@@ -51,6 +50,7 @@ prestonPancakes = () => {
 }
 
 function fiveDayForecast () {
+    console.log("hellow")
     const days = [
         'Sun.', 'Mon.', 'Tues.', 'Wed.', 'Thurs.', 'Fri.', 'Sat.'
     ]
