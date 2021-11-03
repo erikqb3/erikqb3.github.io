@@ -1,0 +1,93 @@
+body {
+  background-color: white;
+}
+
+div {
+  border: 1 solid black;
+  width: 40%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 10px 10px 12px rgb(75, 100, 100);
+  margin-top: 10%;
+  /* border: 1px solid lightgrey; */
+  /* height: 50%; */
+}
+
+table {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+  background-color: lightgrey;
+  font-family: 'Ubuntu', sans-serif;
+  /* box-shadow: 5px 5px 5px black; */
+  /* border: 1px solid lightgrey; */
+}
+
+table > caption {
+  background-color: #7fb9c2;
+  font-weight: bold;
+  font-size: 200%;
+  line-height: 175%;
+  border-top: 2px solid lightgrey;
+  border-left: 2px solid lightgrey;
+  border-right: 2px solid lightgrey;
+}
+
+table > tbody > tr > th {
+  background-color: #628ca6;
+  color: white;
+  font-size: 150%;
+  line-height: 150%;
+}
+
+table > tbody > tr > td {
+  font-size: 125%;
+  font-weight: lighter;
+  line-height: 200%;
+}
+
+table > tbody > tr:nth-of-type(odd) {
+  background-color: #e7ffed;
+}
+table > tbody > tr:nth-of-type(even) {
+  background-color: #e7f0ed;
+}
+
+/*Specific Targets*/
+table > tbody > tr:nth-child(8) > td {
+  background-color: #7fb9c2;
+  font-size: 100%;
+  line-height: 250%;
+}
+
+table > tbody > tr:nth-child(5) > td:nth-child(3) {
+  background-color: #628ca6;
+  color: white;
+}
+
+table > tbody > tr:nth-child(6) > td:nth-child(1) {
+  font-style: italic;
+}
+
+table > tbody > tr > td:nth-child(1) {
+  width: 37.5%;
+}
+table > tbody > tr > td:nth-child(2) {
+  width: 25%;
+}
+table > tbody > tr > td:nth-child(3) {
+  width: 37.5%;
+}
+
+@media screen and (min-width: 1200px) {
+  div {
+    border: 1 solid black;
+    width: 22.5%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 10px 10px 12px rgb(75, 100, 100);
+    margin-top: 10%;
+    /* border: 1px solid lightgrey; */
+    /* height: 50%; */
+  }
+}
