@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather information for Preston Idaho. Find out what the weather is for a five day forecast. Learn about local events">
+    <link rel="stylesheet" href="/Assignments/assignmentPortalStuff/normalize.css">
+    <link rel="stylesheet" href="/Assignments/assignmentPortalStuff/medium.css">
+    <link rel="stylesheet" href="../TTBF_index/TTBF_index.css">
+    <link rel="shortcut icon" href="../TTBF_index/TTBF_img/favicon(1).png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <script src="preston-7.js" defer></script>
+    <script src="../TTBF_index/windchill.js" defer></script>
+    <title>TTBForecasts-Preston</title>
+</head>
+<body>
+    <header>
+        <div class=centralContent>
+            <img id="logo" src="../TTBF_index/TTBF_img/logo.jpg" alt="logo">
+            <div id="headerInfo_holder">
+                <p id="name">TTB Forecasts.com</p>
+                <p id="motto">(Teru Teru Bozu) We want sunshine too!</p>
+            </div>
+            <button id="navMenuButton">&#9776;</button>
+        </div>
+    </header>
+    <nav id="navBar">
+        <ul>
+            <li><a href ="*">Home</a></li>
+            <li id="currentTab">Preston</li>
+            <li><a href ="*">Soda Springs</a></li>
+            <li><a href ="*">Fish Haven</a></li>
+            <li><a href ="*">Storm Center</a></li>
+            <li><a href ="../TTBF_gallery/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="centralContent">Preston Idaho</h1>
+
+        <div id="heroElement_holder" class="centralContent">
+          <picture>
+            <source srcset="preston-7_img/PrestonHero_1000_medium.jpg" media="(min-width:550px) and (max-width:1050px)" alt="PresvtonHero_medium">
+            <source srcset="preston-7_img/PrestonHero_1500_large.jpg" media="(min-width:1050px)" alt="PrestonHero_large">
+            <img class="centralContent" id="heroImg" src="preston-7_img/PrestonHero_500_small.jpg" alt = "PrestonHero_small">
+          </picture>
+            <!-- <img src="preston-7_img/img_holder.png" class="centralContent" id="heroImg" alt="pictureHolder" > -->
+            <div id="weatherSummaryContent_holder">
+                <h3 id="weatherSummary_header">Weather Summary</h3>
+                <div id="weatherSummary_content">
+                  <ul id="weatherSummary_info">
+                    <li>Currently: <span id="currently">FANTASTIC</span></li>
+                    <li>High: <span id="highTemp">54</span> °F</li> <!--Arbitrary Value-->
+                    <li>Wind Chill: <span id="windChillTemp">0</span> °F</li>
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                    <li>Wind Speed: <span id="windSpeed">12</span>mph</li> <!--Arbitrary Value-->
+                  </ul>
+                </div>
+            </div>
+        </div>
+        <div class="centralContent" id="fiveDayForecaset_holder">
+            <ul>
+                <li><i class="fas fa-sun icon"></i>
+                    <p class = "dayOfWeek">Monday</p></li>
+                <li><i class="fas fa-cloud-sun-rain icon"></i>
+                    <p class = "dayOfWeek">Monday</p></li>
+                <!-- <li><img src="preston-7_img/img_holder.png" class="forecastIcon" alt="pictureHolder"></li> -->
+                <!-- <li><img src="preston-7_img/img_holder.png" class="forecastIcon" alt="pictureHolder"></li> -->
+                <li><i class="fab fa-cloudflare icon"></i>
+                    <p class = "dayOfWeek">Monday</p></li>
+                <li><i class="fab fa-cloudversify icon"></i>
+                    <p class = "dayOfWeek">Monday</p></li>
+                <li><i class="fas fa-wind icon"></i>
+                    <p class = "dayOfWeek">Monday</p></li>
+            </ul>
+        </div>
+        <div class="centralContent article">
+            <div id="mainArticles_content1">
+                <div id="mainArticles_text1">
+                    <h4>Article Title</h4>
+                    <p id="mainArticles_text1_p1">Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, </p>
+                </div>
+                <picture>
+                    <source srcset="preston-7_img/Pancakes.jpg" media="(min-width:1050px)" alt="PrestonHero_large">
+                    <img src="preston-7_img/Pancakes_small.jpg" class="articleImg" alt="pictureHolder">
+                </picture>
+            </div>
+        </div>
+        <div class="centralContent" id="mainArticle"></div>
+        <!-- <div class="centralContent" id="contentHolder"></div> -->
+        <!-- <img id="contentHolder" src="images/img holder.png"> -->
+    </main>
+    <footer>
+        <div id="contactInfo_holder">
+        <h4 id="contactInfo_label">Contact Info</h4>
+        <ul id="contactInfo">
+            <li class="hidden">Location</li>
+            <li>(555)555-5555</li>
+            <li>TTBForecasts@gmail.com</li>
+        </ul>
+        </div>
+
+        <ul class="hidden" id="socialMediaLinks">
+            <li><img src="../TTBF_index/TTBF_img/Facebookk_icon.png" alt="facebook"></li>
+            <li><img src="../TTBF_index/TTBF_img/Instagram_icon.png" alt="instagram"></li>
+            <li><img src="../TTBF_index/TTBF_img/YouTube_icon.png" alt="youtube"></li>
+            <li></li>
+        </ul>
+        <!-- <iframe id="locationMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385344029!2d-111.91534444113633!3d42.099741626387434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1634417142862!5m2!1sen!2sus" width="500px" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+        <img id="locationMap" src="../TTBF_index/TTBF_img/img_holder.png" alt="pictureHolder">
+        <div id="timeDateStuff">
+            <p id="lastUpdated">Last Updated: <span id="currentdate"></span></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Snippet']
+    }
+  });
+</script>
+
+</body>
+</html>

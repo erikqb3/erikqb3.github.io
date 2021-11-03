@@ -1,0 +1,133 @@
+fieldset {
+  display: block;
+  margin: 25px auto;
+  width: 90%;
+  border-radius: 10px;
+  /* padding: 15px; */
+  /* border: 1px solid black; */
+}
+
+fieldset > legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+fieldset > label {
+  display: block;
+  padding-top: 20px;
+  margin-left: 8.5px;
+  cursor: pointer;
+  width: 300px;
+  /* line-height: 5em; */
+  /* color: red; */
+}
+
+fieldset > label > input {
+  display: block;
+  line-height: 2em;
+  width: 100%;
+  max-width: 300px;
+}
+
+fieldset > label.flexly {
+  display: flex;
+  /* margin-left: 5px; */
+}
+
+fieldset > label.flexly > span#ratingValue {
+  margin-left: 5px;
+}
+
+fieldset > div#inDanger_holder {
+  margin: 20px 0 0 8.5px; /*Top Right Bottom Left*/
+}
+fieldset > div#inDanger_holder > label {
+  display: block;
+}
+fieldset > div#inDanger_holder > label > input {
+}
+
+fieldset > label#stormComments_special {
+  width: 95%;
+  /* max-width: 600px; */
+}
+fieldset > label > textarea {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
+fieldset > input#submit {
+  /* background-color: orange; */
+  margin: 10px 0;
+  margin-left: 8.5px;
+  width: 100%;
+  max-width: 250px;
+  line-height: 2em;
+  background-color: #192f67;
+  color: #f4db0f;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+div#thankYou_text {
+  width: 100%;
+}
+
+div#mainArticles_content1 {
+  height: auto;
+}
+
+div#thankYou_text {
+  display: block;
+  padding: 25px 0;
+}
+
+div#thankYou_text > h1 {
+  text-align: center;
+  margin: 10px auto;
+  margin-top: 0;
+}
+
+div#thankYou_text > p {
+  display: block;
+  margin: 0 auto;
+
+  /* font-size: 2em; */
+  text-align: center;
+  /* color: red; */
+}
+
+@media screen and (min-width: 1200px) {
+  fieldset > label#stormComments_special {
+    width: 95%;
+    max-width: 600px;
+  }
+  fieldset > label > textarea {
+    display: block;
+    width: 100%;
+    height: 200px;
+  }
+
+  div#thankYou_text {
+    display: block;
+    padding: 200px 0;
+  }
+
+  div#thankYou_text > h1 {
+    display: block;
+    margin: 50px auto 0 auto;
+    font-size: 4em;
+    text-align: center;
+    /* color: red; */
+  }
+
+  div#thankYou_text > p {
+    display: block;
+    margin: 50px auto 0 auto;
+    font-size: 2em;
+    text-align: center;
+    /* color: red; */
+  }
+}
