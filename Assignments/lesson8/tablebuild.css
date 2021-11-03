@@ -4,13 +4,11 @@ body {
 
 div {
   border: 1 solid black;
-  width: 40%;
+  width: 90%;
   margin: 0 auto;
   background-color: white;
   box-shadow: 10px 10px 12px rgb(75, 100, 100);
   margin-top: 10%;
-  /* border: 1px solid lightgrey; */
-  /* height: 50%; */
 }
 
 table {
@@ -77,6 +75,19 @@ table > tbody > tr > td:nth-child(2) {
 }
 table > tbody > tr > td:nth-child(3) {
   width: 37.5%;
+}
+
+@media screen and (min-width: 768px) {
+  div {
+    border: 1 solid black;
+    width: 40%;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 10px 10px 12px rgb(75, 100, 100);
+    margin-top: 10%;
+    /* border: 1px solid lightgrey; */
+    /* height: 50%; */
+  }
 }
 
 @media screen and (min-width: 1200px) {
