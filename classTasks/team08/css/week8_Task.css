@@ -1,0 +1,38 @@
+#dad-joke {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2.5%;
+}
+div#dad-joke > #joke {
+  font-family: cursive;
+  width: 60%;
+  height: 55%;
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  overflow: hidden;
+  font-size: 1em;
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1500px) {
+  #dad-joke {
+    width: 40%;
+    margin-top: 2.5%;
+  }
+  div#dad-joke > #joke {
+    width: 60%;
+    height: 55%;
+    z-index: 2;
+    font-size: 2em;
+  }
+}
