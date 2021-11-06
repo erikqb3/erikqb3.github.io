@@ -3,6 +3,7 @@ fieldset {
   margin: 25px auto;
   width: 90%;
   border-radius: 10px;
+  font-family: 'Roboto Mono';
   /* padding: 15px; */
   /* border: 1px solid black; */
 }
@@ -59,6 +60,7 @@ fieldset > label > textarea {
 
 fieldset > input#submit {
   /* background-color: orange; */
+  font-family: 'Snippet';
   margin: 10px 0;
   margin-left: 8.5px;
   width: 100%;

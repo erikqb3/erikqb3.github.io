@@ -164,6 +164,7 @@ div#weatherSummaryContent_holder {
   padding: 10px;
   background-color: rgba(0, 83, 156, 0.8);
   font-size: 0.6em;
+  font-family: 'Roboto Mono';
 }
 
 h3#weatherSummary_header {
@@ -196,7 +197,9 @@ img.forecastIcon {
   width: 30px;
 }
 li > i.icon {
+  display: block;
   color: #f4db0f;
+  text-align: center;
   font-size: 2em;
 }
 
