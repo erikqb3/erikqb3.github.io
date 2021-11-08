@@ -1,0 +1,65 @@
+body,
+html {
+  margin: 0 auto;
+  background-color: orange;
+}
+
+header,
+h1 {
+  background-color: lightyellow;
+  color: goldenrod;
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+header {
+  border-bottom: 2.5px solid maroon;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main,
+div.cards {
+  margin: 0 auto;
+  text-align: center;
+}
+
+section {
+  background-color: lightyellow;
+  border: 2.5px solid maroon;
+  width: 80%;
+  margin: 10px auto;
+  /* border: 1px solid; */
+}
+
+section > h2 {
+  margin: 10px auto;
+  color: goldenrod;
+  font-family: Arial, Helvetica, sans-serifl;
+}
+section > h4 {
+  margin: 0 auto;
+}
+section > img {
+  width: 45%;
+  height: 170px;
+  margin: 15px auto 5px auto;
+  box-shadow: 2.5px 2.5px 20px black;
+}
+
+@media screen and (min-width: 1200px) {
+  div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  header {
+    font-size: 2em;
+  }
+
+  section {
+    height: 500px;
+  }
+  section > img {
+    width: 75%;
+    height: 375px;
+  }
+}
