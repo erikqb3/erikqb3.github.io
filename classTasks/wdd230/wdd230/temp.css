@@ -1,0 +1,10 @@
+body {
+  width: 60%;
+  margin: 0 auto;
+  font-family: 'Tangerine', serif;
+}
+
+ul.removePadding {
+  padding-left: 0;
+  margin-left: 0;
+}

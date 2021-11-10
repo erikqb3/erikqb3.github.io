@@ -246,6 +246,16 @@ div#mainArticles_text1 > p {
   margin: 0px auto;
   padding-bottom: 10px;
 }
+
+/* div#wireframes > img {
+  display: block;
+  float: none;
+  margin: 50px auto;
+}
+div#wireframes > p {
+  text-align: center;
+  margin-top: -40px;
+} */
 /*FOOTER*/
 footer {
   background-color: #192f67;
