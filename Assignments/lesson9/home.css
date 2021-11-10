@@ -6,6 +6,10 @@ div.article {
   text-align: center;
   display: block;
 }
+div.article > div.info_holder {
+  width: 90%;
+  margin: 0 auto;
+}
 
 div.article > div.info_holder > h1 {
   padding-top: 25px;
@@ -25,7 +29,7 @@ div.article > div.info_holder > div.stats_holder > h6 {
 }
 div.article > img {
   display: inline-block;
-  width: 75%;
+  width: 90%;
   /* width: 350px; */
   margin: 0 auto;
   margin-bottom: 25px;
@@ -82,7 +86,7 @@ div.article > img {
   div.article > div.info_holder {
     display: block;
     padding: 0;
-    margin: 15px auto 15px auto;
+    margin: 30px auto 15px auto;
     height: auto;
     width: 90%;
   }
