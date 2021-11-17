@@ -29,6 +29,7 @@ div.article > div.info_holder > div.stats_holder > h6 {
 }
 div.article > img {
   display: inline-block;
+  float: none;
   width: 90%;
   /* width: 350px; */
   margin: 0 auto;
