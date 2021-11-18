@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+
+@media screen and (min-width: 0) {
+  ul {
+    list-style-type: none;
+  }
+
+  .fiveDays {
+    display: flex;
+    flex-direction: row;
+    /* overflow: scroll; */
+    margin-right: 15px;
+  }
+
+  body {
+    background-image: url('3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: auto;
+  }
+
+  #weatherSummary_header {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 15px;
+    color: #eee;
+  }
+
+  #weatherSummary_content {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 20px;
+    background: rgba(24, 24, 27, 0.6);
+  }
+
+  #weatherSummary_info {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 0;
+    margin: 5%;
+  }
+
+  .centralContent > ul {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .centralContent li {
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    font-family: 'Poppins', sans-serif;
+    color: #eee;
+    background: rgba(24, 24, 27, 0.6);
+  }
+
+  .centralContent > ul > li > i.weatherIcon {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  #fiveDayForecaset_holder {
+    margin: 250px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h3#weatherSummary_header {
+    font-size: 3rem;
+    margin: 48px auto 12px 10px;
+  }
+
+  div#weatherSummary_content {
+    font-size: 1.5rem;
+  }
+  div#fiveDayForecaset_holder {
+    width: 90%;
+    margin: 250px auto 50px 0px;
+  }
+  .centralContent > ul > li {
+    padding: 0 50px;
+    margin: 0 15px;
+    font-size: 2rem;
+  }
+
+  .centralContent > ul > li > p {
+    margin: 15px auto;
+  }
+  .centralContent > ul > li > i.weatherIcon {
+    font-size: 2.5rem;
+  }
+}

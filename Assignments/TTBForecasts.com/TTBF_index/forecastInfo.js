@@ -77,8 +77,7 @@ function nextFiveDays () {
       'Sun.', 'Mon.', 'Tues.', 'Wed.', 'Thurs.', 'Fri.', 'Sat.'
   ]
   const todaysDate = new Date();
-  let dayNumb = todaysDate.getDay()
-  let dayName = days[dayNumb];
+  let dayNumb = todaysDate.getDay();
   const daysArray = document.querySelectorAll(".dayOfWeek")
     
   
@@ -89,47 +88,23 @@ function nextFiveDays () {
       if (dayNumb > 6) {
           dayNumb = 0;
       }
-      // console.log(dayNumb)
   }
 
 }
 
 function fiveDayForecast(usableStuff) {
-  // console.log(usableStuff[1]);
-  // console.log(usableStuff[2]);
-
-  fetch(usableStuff[1])  
-  .then((response) => response.json())
-  .then((jsObject) => {
-    console.log("currentWeather", jsObject);
-  })
 
   fetch(usableStuff[2])  
   .then((response) => response.json())
   .then((jsObject) => {
+    console.log("forecastWeather", jsObject);
     const forecastTemps = document.querySelectorAll(".forecastTemp");
     for (i=0; i < 5; i++) {
-      console.log(jsObject.list[i].main.temp)
-      forecastTemps[i].innerHTML = jsObject.list[i].main.temp
+      forecastTemps[i].innerHTML = Math.round(jsObject.list[i].main.temp);
     }
   })
 }
 
-
-
-
-
-// fetch(currentWeatherAPI)  
-//   .then((response) => response.json())
-//   .then((jsObject) => {
-//     console.log("currentWeather", jsObject);
-//   })
-
-//   fetch(forecastAPI)  
-//   .then((response) => response.json())
-//   .then((jsObject) => {
-//     console.log("forecast",jsObject);
-//   })
 
 
 
