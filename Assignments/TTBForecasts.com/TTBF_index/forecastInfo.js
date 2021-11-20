@@ -106,7 +106,7 @@ function fiveDayForecast(usableStuff) {
         let mainWeather = jsObject.list[i].weather[0].main;
         forecastIcons[i].classList.add("wi")
         switch(mainWeather) {
-          case ("Sun"):
+          case ("Clear"):
             forecastIcons[i].classList.add(iconOptions[0]);
             break;
           case ("Clouds"):
