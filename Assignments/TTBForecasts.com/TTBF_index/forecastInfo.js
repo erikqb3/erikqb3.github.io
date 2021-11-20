@@ -93,16 +93,38 @@ function nextFiveDays () {
 }
 
 function fiveDayForecast(usableStuff) {
+  let iconOptions = ['wi-day-sunny','wi-cloudy', 'wi-rain', 'wi-snow']
 
-  fetch(usableStuff[2])  
-  .then((response) => response.json())
-  .then((jsObject) => {
-    console.log("forecastWeather", jsObject);
-    const forecastTemps = document.querySelectorAll(".forecastTemp");
-    for (i=0; i < 5; i++) {
-      forecastTemps[i].innerHTML = Math.round(jsObject.list[i].main.temp);
-    }
-  })
+  fetch(usableStuff[2])
+    .then((response) => response.json())
+    .then((jsObject) => {
+      console.log('forecastWeather', jsObject);
+      const forecastTemps = document.querySelectorAll('.forecastTemp');
+      const forecastIcons = document.querySelectorAll('.weatherIcon');
+      for (i = 0; i < 5; i++) {
+        forecastTemps[i].innerHTML = Math.round(jsObject.list[i].main.temp);
+        let mainWeather = jsObject.list[i].weather[0].main;
+        forecastIcons[i].classList.add("wi")
+        switch(mainWeather) {
+          case ("Sun"):
+            forecastIcons[i].classList.add(iconOptions[0]);
+            break;
+          case ("Clouds"):
+            forecastIcons[i].classList.add(iconOptions[1]);
+            break;
+          case ("Rain"):
+            forecastIcons[i].classList.add(iconOptions[2]);
+            break;
+          case ("Snow"):
+            forecastIcons[i].classList.add(iconOptions[3]);
+            break;
+          default:
+
+        }
+
+      
+      }
+    });
 }
 
 

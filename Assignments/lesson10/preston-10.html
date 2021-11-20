@@ -7,6 +7,7 @@
     <meta name="description" content="Weather information for Preston Idaho. Find out what the weather is for a five day forecast. Learn about local events">
     <link rel="stylesheet" href="/Assignments/assignmentPortalStuff/normalize.css">
     <link rel="stylesheet" href="/Assignments/assignmentPortalStuff/medium.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
     <link rel="stylesheet" href="../TTBForecasts.com/TTBF_index/TTBF_index.css">
     <link rel="shortcut icon" href="../TTBForecasts.com/TTBF_index/TTBF_img/favicon(1).png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -15,6 +16,7 @@
     <script src="../TTBForecasts.com/TTBF_preston/preston-7.js" defer></script>
     <!-- <script src="../TTBForecasts.com/TTBF_index/windchill.js" defer></script> Scrap once forecast is made with windchill added -->
     <script src="../TTBForecasts.com/TTBF_index/forecastInfo.js" defer></script>
+    <script src="../TTBForecasts.com/TTBF_index/TTBF_index.js" defer></script>
     <title>Preston</title>
 </head>
 <body>
@@ -62,31 +64,31 @@
             </div>
         </div>
         <div class="centralContent" id="fiveDayForecaset_holder">
-          <ul>
+          <ul class="fiveDays">
             <li><p class = "dayOfWeek">Monday</p>
-              <i class="fas fa-sun icon"></i>
+              <i class="weatherIcon"></i>
             <p><span class="forecastTemp">0</span> °F</p></li>
             <li><p class = "dayOfWeek">Monday</p>
-              <i class="fas fa-cloud-sun-rain icon"></i>
+              <i class="weatherIcon"></i>
               <p><span class="forecastTemp">0</span> °F</p></li>
             <li><p class = "dayOfWeek">Monday</p>
-              <i class="fab fa-cloudflare icon"></i>
+              <i class="weatherIcon"></i>
               <p><span class="forecastTemp">0</span> °F</p></li>
             <li><p class = "dayOfWeek">Monday</p>
-              <i class="fab fa-cloudversify icon"></i>
+              <i class="weatherIcon"></i>
               <p><span class="forecastTemp">0</span> °F</p></li>
             <li><p class = "dayOfWeek">Monday</p>
-              <i class="fas fa-wind icon"></i>
+              <i class="weatherIcon"></i>
               <p><span class="forecastTemp">0</span> °F</p></li>
           </ul>
-      </div>
+        </div>
         <div class="centralContent article">
             <div id="mainArticles_content1">
                 <div id="mainArticles_text1">
                     <h4>Article Title</h4>
-                    <p id="mainArticles_text1_p1">Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, </p>
+                    <p id="mainArticles_text1_p1">Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, </p>
                 </div>
-                <picture>
+                <picture class="imageHolder">
                   <source srcset="../TTBForecasts.com/TTBF_preston/preston-7_img/Pancakes.jpg" media="(min-width:1050px)" alt="PrestonHero_large">
                   <img src="../TTBForecasts.com/TTBF_preston/preston-7_img/Pancakes_small.jpg" class="articleImg" alt="pictureHolder">
                 </picture>

@@ -30,28 +30,3 @@ else {
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
-
-function fiveDayForecast () {
-    console.log("hellow")
-    const days = [
-        'Sun.', 'Mon.', 'Tues.', 'Wed.', 'Thurs.', 'Fri.', 'Sat.'
-    ]
-    const todaysDate = new Date();
-    let dayNumb = todaysDate.getDay()
-    let dayName = days[dayNumb];
-    const daysArray = document.querySelectorAll(".dayOfWeek")
-     
-    
-    
-    for (i=0; i < daysArray.length; i++) {
-        daysArray[i].innerHTML = days[dayNumb];
-        dayNumb += 1;
-        if (dayNumb > 6) {
-            dayNumb = 0;
-        }
-        console.log(dayNumb)
-    }
-
-}
-
