@@ -36,15 +36,15 @@ function startingVariables() {
   
   let key = "fa5461ada34b7f39fee29ec7f416ffb6";
   let cityID = 5605242;
-  let apiURL = `http://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`
+  let apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`
 
   const currentPage = window.location.href;
 
   let currentWeatherAPI =
-  `http://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`;
+  `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`;
 
   let forecastAPI =
-  `http://api.openweathermap.org/data/2.5/forecast?id=${cityID}&units=imperial&appid=${key}`;
+  `https://api.openweathermap.org/data/2.5/forecast?id=${cityID}&units=imperial&appid=${key}`;
 
   let usableStuff = [];
   usableStuff.push(apiURL);

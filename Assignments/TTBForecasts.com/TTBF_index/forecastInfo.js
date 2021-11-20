@@ -6,7 +6,7 @@ nextFiveDays();
 fiveDayForecast(usableStuff);
 
 function startingVariables () {
-  const prestonPage = "http://127.0.0.1:5502/Assignments/lesson10/preston-10.html";
+  const prestonPage = "https://127.0.0.1:5502/Assignments/lesson10/preston-10.html";
   const sodaSpringsPage = "";
   const fishHavenPage = "";
   
@@ -22,7 +22,7 @@ function startingVariables () {
       console.log("You are on the Preston Page");
       key = "fa5461ada34b7f39fee29ec7f416ffb6";
       cityID = 5604473;
-      apiURL = `http://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`
+      apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`
       break;
     case sodaSpringsPage:
       console.log("You are on the Soda Springs Page");
@@ -33,9 +33,9 @@ function startingVariables () {
     default:
   }
 
-let currentWeatherAPI = `http://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`
+let currentWeatherAPI = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`
 
-let forecastAPI = `http://api.openweathermap.org/data/2.5/forecast?id=${cityID}&units=imperial&appid=${key}`
+let forecastAPI = `https://api.openweathermap.org/data/2.5/forecast?id=${cityID}&units=imperial&appid=${key}`
 
 
 
