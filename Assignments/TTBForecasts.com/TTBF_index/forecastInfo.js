@@ -6,7 +6,7 @@ nextFiveDays();
 fiveDayForecast(usableStuff);
 
 function startingVariables () {
-  const prestonPage = "https://127.0.0.1:5502/Assignments/lesson10/preston-10.html";
+  const prestonPage = "https://erikqb3.github.io/Assignments/lesson10/preston-10.html";
   const sodaSpringsPage = "";
   const fishHavenPage = "";
   
