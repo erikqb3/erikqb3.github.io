@@ -21,7 +21,7 @@ function startingVariables () {
     case prestonPage:
       console.log("You are on the Preston Page");
       key = "fa5461ada34b7f39fee29ec7f416ffb6";
-      cityID = 5604473;
+      cityID = 5605242;
       apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`
       break;
     case sodaSpringsPage:
