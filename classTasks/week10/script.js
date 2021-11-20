@@ -34,9 +34,9 @@ function startingVariables() {
   // let apiURL ='api.openweathermap.org/data/2.5/weather?id=5605242&appid=6801c679faa89deb6356eb9331222fb8';
   // console.log(apiURL)
   
-  key = "fa5461ada34b7f39fee29ec7f416ffb6";
-  cityID = 5604473;
-  apiURL = `http://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`
+  let key = "fa5461ada34b7f39fee29ec7f416ffb6";
+  let cityID = 5605242;
+  let apiURL = `http://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`
 
   const currentPage = window.location.href;
 
