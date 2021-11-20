@@ -35,7 +35,7 @@ function startingVariables() {
   // console.log(apiURL)
   
   let key = "fa5461ada34b7f39fee29ec7f416ffb6";
-  let cityID = 5604473;
+  let cityID = 5605242; //5605242 --> Rexburg, 5604473 --> Preston
   let apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`
 
   const currentPage = window.location.href;
