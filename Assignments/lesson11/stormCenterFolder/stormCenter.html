@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Form page where contributors can report sightings of signficant storms">
+  <link rel="stylesheet" href="/Assignments/assignmentPortalStuff/normalize.css">
+  <link rel="stylesheet" href="/Assignments/assignmentPortalStuff/medium.css">
+  <link rel="stylesheet" href="../indexFolder/TTBF_index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="stormCenter.css">
+  <link rel="shortcut icon" href="../indexFolder/TTBF_img/favicon(1).png">
+  <!-- <script src="lazyload.js" defer></script> -->
+  <script src="../indexFolder/TTBF_index.js" defer></script>
+  <script src="stormCenter.js" defer></script>
+  <title>TTBForecasts-Storm Center</title>
+</head>
+<body>
+  <header>
+    <div class=centralContent>
+        <img id="logo" src="../indexFolder/TTBF_img/logo.jpg" alt="logo">
+        <div id="headerInfo_holder">
+            <p id="name">TTB Forecasts.com</p>
+            <p id="motto">(Teru Teru Bozu) We want sunshine too!</p>
+        </div>
+        <button id="navMenuButton">&#9776;</button>
+    </div>
+</header>
+<nav id="navBar">
+    <ul>
+        <li><a href ="../indexFolder/index.html">Home</a></li>
+        <li><a href="../TTBF_preston/preston-7.html">Preston</a></li>
+        <li><a href ="../../index.html">Soda Springs</a></li>
+        <li><a href ="*../../index.html">Fish Haven</a></li>
+        <li id="currentTab"><a href="stormCenter.html">Storm Center</a></li>
+        <li><a href="../TTBF_gallery/gallery-7.html">Gallery</a></li>
+    </ul>
+</nav>
+
+
+
+<main>
+<div id="form_container">
+  <form id="awesomeForm" method="get" action="./thanks.html"> <!--Prevents default refresh-->
+    <fieldset>
+      <legend>Contributer's Info</legend>
+      <label for="fullName">Full Name*: <input type="text" name="fullName" id="fullName" placeholder="Honest" pattern="[A-Za-z]{5,}" required></label> <!--Pattern?-->
+      <label for="email">Email: <input type="email" name="email" id="email" placeholder=iamhonest@gmail.com></label>
+      <label for="phone">Phone*: <input type="tel" name="phone" id="phone"  placeholder=555-555-5555 required></label>
+      <label for="zipCode">ZipCode*: <input type="number" name="zipCode" id="zipCode" required></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Storm Info</legend>
+    <label for="stormDate">Date: <input type="date" name="stormDate" id="stormDate"></label>
+    <label for="stormType">Storm Type: <input list="stormOptions" name="stormType" id="stormType"></label>
+    <datalist id="stormOptions">
+      <option value="FlashFlood"></option>
+      <option value="Hail"></option>
+      <option value="Hurricane"></option>
+      <option value="Thunderstorm"></option>
+      <option value="Tornado"></option>
+      <option value="Meteor Shower"></option>
+    </datalist>
+    <!-- <label for="severity">Storm Severity: <input type="range" name="severity" id="severity" min="1" max="10" step="1" list="tickmarks"></label> -->
+      <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" 
+        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+        <span id="ratingValue">5</span>
+      </label>
+      <datalist id="tickmarks">
+        <option value="0">
+        <option value="1">
+        <option value="2">
+        <option value="3">
+        <option value="4">
+        <option value="5">
+        <option value="6">
+        <option value="7">
+        <option value="8">
+        <option value="9">
+        <option value="10">
+      </datalist>
+
+
+    <label>Storm Region: 
+      <select name="stormRegion">
+        <!-- <option value="" hidden>Select Region</option> -->
+        <option value="" selected disabled>Select Region</option>
+        <option value="preston">Preston</option>
+        <option value="sodaSprings">Soda Springs</option>
+        <option value="fishHaven">Fish Haven</option>
+      </select>
+    </label>
+    <div id="inDanger_holder">User In-Danger: 
+      <label><input type="radio" name="dangerLevel" value="yes">Yes</label>
+      <label><input type="radio" name="dangerLevel" value="no">No</label>
+      <label><input type="radio" name="dangerLevel" value="maybe">Maybe</label>
+    </div>
+    <label id="stormComments_special" for="stormComments">Comments<textarea name="stormComments" id="stormComments"></textarea></label>     
+    </fieldset>
+    <fieldset>
+      <input type="submit" name="submit" id="submit" value="Post Storm Sighting">
+    </fieldset>
+  </form>
+</div>
+</main>
+
+
+
+<footer>
+  <div id="contactInfo_holder">
+  <h4 id="contactInfo_label">Contact Info</h4>
+  <ul id="contactInfo">
+      <li class="hidden">Location</li>
+      <li>(555)555-5555</li>
+      <li>TTBForecasts@gmail.com</li>
+  </ul>
+  </div>
+
+  <ul class="hidden" id="socialMediaLinks">
+      <li><img src="../indexFolder/TTBF_img/Facebookk_icon.png" alt="facebook"></li>
+      <li><img src="../indexFolder/TTBF_img/Instagram_icon.png" alt="instagram"></li>
+      <li><img src="../indexFolder/TTBF_img/YouTube_icon.png" alt="youtube"></li>
+      <li></li>
+  </ul>
+  <!-- <iframe id="locationMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385344029!2d-111.91534444113633!3d42.099741626387434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1634417142862!5m2!1sen!2sus" width="500px" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+  <img id="locationMap" src="../indexFolder/TTBF_img/img_holder.png" alt="pictureHolder">
+  <div id="timeDateStuff">
+      <p id="lastUpdated">Last Updated: <span id="currentdate"></span></p>
+  </div>
+</footer>
+</body>
+</html>

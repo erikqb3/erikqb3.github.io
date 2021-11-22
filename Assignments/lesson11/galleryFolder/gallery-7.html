@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Gallery of Weather Conditions provided by people">
+  <link rel="stylesheet" href="/Assignments/assignmentPortalStuff/normalize.css">
+  <link rel="stylesheet" href="/Assignments/assignmentPortalStuff/medium.css">
+  <link rel="stylesheet" href="../indexFolder/TTBF_index.css">
+  <link rel="shortcut icon" href="../indexFolder/TTBF_img/favicon(1).png">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="lazyload.js" defer></script>
+  <script src="../indexFolder/TTBF_index.js" defer></script>
+  <title>TTBForecasts-Gallery</title>
+</head>
+<body>
+  <header>
+    <div class=centralContent>
+        <img id="logo" src="../indexFolder/TTBF_img/logo.jpg" alt="logo">
+        <div id="headerInfo_holder">
+            <p id="name">TTB Forecasts.com</p>
+            <p id="motto">(Teru Teru Bozu) We want sunshine too!</p>
+        </div>
+        <button id="navMenuButton">&#9776;</button>
+    </div>
+</header>
+<nav id="navBar">
+    <ul>
+        <li><a href ="../indexFolder/index.html">Home</a></li>
+        <li><a href="../TTBF_preston/preston-7.html">Preston</a></li>
+        <li><a href ="../../../index.html">Soda Springs</a></li>
+        <li><a href ="../../../index.html">Fish Haven</a></li>
+        <li><a href ="../TTBF_stormCenter/stormCenter.html">Storm Center</a></li>
+        <li id="currentTab"><a href="gallery-7.html">Gallery</a></li>
+    </ul>
+</nav>
+<main>
+  <h1 class="titleText">Weather Gallery</h1>
+  <div id="gallery">
+    <figure id="img1">
+      <img src="galleryImages/unloadedImage.jpg" data-src="galleryImages/img1.jpg" alt="weather_image" class="galleryImage">
+      <figcaption>Ah! A Beautiful Day...</figcaption>
+    </figure>
+    <figure id="img2">
+      <img src="galleryImages/unloadedImage.jpg" data-src="galleryImages/img2.jpg" alt="weather_image" class="galleryImage">
+      <figcaption>Oh! What do we have here?</figcaption>
+    </figure>
+    <figure id="img3">
+      <img src="galleryImages/unloadedImage.jpg" data-src="galleryImages/img3.jpg" alt="weather_image" class="galleryImage">
+      <figcaption>Something's coming...</figcaption>
+    </figure>
+    <figure id="img4">
+      <img src="galleryImages/unloadedImage.jpg" data-src="galleryImages/img4.jpg" alt="weather_image" class="galleryImage">
+      <figcaption>Should we be worried?</figcaption>
+    </figure>
+    <figure id="img5">
+      <img src="galleryImages/unloadedImage.jpg" data-src="galleryImages/img5.jpg" alt="weather_image" class="galleryImage">
+      <figcaption>Yeah, something's definately coming...</figcaption>
+    </figure>
+    <figure id="img6">
+      <img src="galleryImages/unloadedImage.jpg" data-src="galleryImages/img6.jpg" alt="weather_image" class="galleryImage">
+      <figcaption>...and we should definately be worried?</figcaption>
+    </figure>
+    <figure id="img7">
+      <img src="galleryImages/unloadedImage.jpg" data-src="galleryImages/img7.jpg" alt="weather_image" class="galleryImage">
+      <figcaption>Did not see this coming...</figcaption>
+    </figure>
+    <figure id="img8">
+      <img src="galleryImages/unloadedImage.jpg" data-src="galleryImages/img8.jpg" alt="weather_image" class="galleryImage">
+      <figcaption>Our day of reconing has come!</figcaption>
+    </figure>
+    <figure id="img9">
+      <img src="galleryImages/unloadedImage.jpg" data-src="galleryImages/img9.jpg" alt="weather_image" class="galleryImage">
+      <figcaption>The End</figcaption>
+    </figure>
+  </div>
+</main>
+<footer>
+  <div id="contactInfo_holder">
+  <h4 id="contactInfo_label">Contact Info</h4>
+  <ul id="contactInfo">
+      <li class="hidden">Location</li>
+      <li>(555)555-5555</li>
+      <li>TTBForecasts@gmail.com</li>
+  </ul>
+  </div>
+
+  <ul class="hidden" id="socialMediaLinks">
+      <li><img src="../indexFolder/TTBF_img/Facebookk_icon.png" alt="facebook"></li>
+      <li><img src="../indexFolder/TTBF_img/Instagram_icon.png" alt="instagram"></li>
+      <li><img src="../indexFolder/TTBF_img/YouTube_icon.png" alt="youtube"></li>
+      <li></li>
+  </ul>
+  <!-- <iframe id="locationMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385344029!2d-111.91534444113633!3d42.099741626387434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1634417142862!5m2!1sen!2sus" width="500px" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+  <img id="locationMap" src="../indexFolder/TTBF_img/img_holder.png" alt="pictureHolder">
+  <div id="timeDateStuff">
+      <p id="lastUpdated">Last Updated: <span id="currentdate"></span></p>
+  </div>
+</footer>
+</body>
+</html>

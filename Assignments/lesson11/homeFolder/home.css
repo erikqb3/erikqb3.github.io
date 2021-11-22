@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Snippet&display=swap');
+div.article {
+  /* background-color: blue; */
+  width: 90%;
+  margin: 25px auto;
+  text-align: center;
+  display: block;
+}
+div.article > div.info_holder {
+  width: 90%;
+  margin: 0 auto;
+}
+
+div.article > div.info_holder > h1 {
+  padding-top: 25px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+div.article > div.info_holder > h3 {
+  font-family: 'Snippet', sans-serif;
+  /* padding-top: 25px; */
+  margin: 0;
+}
+div.article > div.info_holder > div.stats_holder {
+  margin: 15px 0 15px 0;
+}
+div.article > div.info_holder > div.stats_holder > h6 {
+  margin: 5px;
+}
+div.article > img {
+  display: inline-block;
+  float: none;
+  width: 90%;
+  /* width: 350px; */
+  margin: 0 auto;
+  margin-bottom: 25px;
+  border: 1px solid black;
+  box-shadow: 2.5px 2.5px 10px black;
+}
+
+@media screen and (min-width: 768px) {
+  div.article {
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+  }
+  div.article > div.info_holder {
+    height: 40%;
+    width: 40%;
+    padding: 15px;
+  }
+  div.article > img {
+    display: flex;
+    width: 60%;
+    padding: 0;
+    margin: 15px;
+  }
+  div.article > div.info_holder > h1 {
+    margin: 0 auto 10px auto;
+    padding: 0;
+  }
+
+  div.article > div.info_holder > div.stats_holder {
+    margin-top: 25px;
+  }
+  div.article > div.info_holder > div.stats_holder > h6 {
+    margin: 15px;
+    font-size: 1em;
+    font-weight: normal;
+  }
+
+  div.article#sodaSprings_card {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    display: flex;
+  }
+  div.article {
+    /* background-color: green; */
+    display: block;
+    width: 30%;
+  }
+  div.article > div.info_holder {
+    display: block;
+    padding: 0;
+    margin: 30px auto 15px auto;
+    height: auto;
+    width: 90%;
+  }
+  div.article#sodaSprings_card {
+    display: block;
+  }
+  div.article > img {
+    display: inline-block;
+    width: 90%;
+    margin: 15 auto;
+    float: none;
+  }
+}
