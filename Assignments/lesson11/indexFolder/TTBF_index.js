@@ -32,7 +32,9 @@ else {
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 // MAP ON ARTICLE PAGES ONLY
-const currentPage = window.location.href
+const fromPortal = window.location.href
+const fromLiveServer = window.location.href
+
 
 // if currentPage == 
 
