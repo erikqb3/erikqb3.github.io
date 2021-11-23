@@ -1,4 +1,6 @@
 //JS FOR ALL HTML
+
+//NAV TOGGLE STUFF...?
 window.onload = (event) => {
     let lastModified = document.lastModified
     document.getElementById('currentdate').textContent = lastModified
@@ -9,8 +11,7 @@ let hamburger = document.querySelector("#navMenuButton");
 hamburger.addEventListener('click',toggleNav);
 
 function toggleNav() {
-    document.querySelector("#navBar").classList.toggle("hidden")
-    console.log("Hello")
+    document.querySelector("#navBar").classList.toggle("hidden");
 }
 
 let startingWindowWidth = window.innerWidth;
@@ -27,6 +28,12 @@ else {
     document.querySelector('#socialMediaLinks').classList.add('hidden');
     // ocument.querySelector("#navMenuButton").classList.remove('hidden');
 }
+
 ////////////////////////////////////////////////////////////////////////////////////////////////
+
+// MAP ON ARTICLE PAGES ONLY
+const currentPage = window.location.href
+
+// if currentPage == 
 
 

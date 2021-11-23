@@ -1,41 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Snippet&display=swap');
-div.article {
-  /* background-color: blue; */
-  width: 90%;
-  margin: 25px auto;
-  text-align: center;
-  display: block;
-}
-div.article > div.info_holder {
-  width: 90%;
-  margin: 0 auto;
-}
+@media screen and (min-width: 0px) {
+  div.article {
+    /* background-color: blue; */
+    width: 90%;
+    margin: 25px auto;
+    text-align: center;
+    display: block;
+    background-color: white;
+  }
+  div.article > div.info_holder {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-div.article > div.info_holder > h1 {
-  padding-top: 25px;
-  margin-bottom: 0;
-  text-decoration: underline;
-}
-div.article > div.info_holder > h3 {
-  font-family: 'Snippet', sans-serif;
-  /* padding-top: 25px; */
-  margin: 0;
-}
-div.article > div.info_holder > div.stats_holder {
-  margin: 15px 0 15px 0;
-}
-div.article > div.info_holder > div.stats_holder > h6 {
-  margin: 5px;
-}
-div.article > img {
-  display: inline-block;
-  float: none;
-  width: 90%;
-  /* width: 350px; */
-  margin: 0 auto;
-  margin-bottom: 25px;
-  border: 1px solid black;
-  box-shadow: 2.5px 2.5px 10px black;
+  div.article > div.info_holder > h1 {
+    padding-top: 25px;
+    margin-bottom: 0;
+    text-decoration: underline;
+  }
+  div.article > div.info_holder > h3 {
+    font-family: 'Snippet', sans-serif;
+    /* padding-top: 25px; */
+    margin: 0;
+  }
+  div.article > div.info_holder > div.stats_holder {
+    margin: 15px 0 15px 0;
+  }
+  div.article > div.info_holder > div.stats_holder > h6 {
+    margin: 5px;
+  }
+  div.article > img {
+    display: inline-block;
+    float: none;
+    width: 90%;
+    /* width: 350px; */
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border: 1px solid black;
+    box-shadow: 2.5px 2.5px 10px black;
+  }
 }
 
 @media screen and (min-width: 768px) {
