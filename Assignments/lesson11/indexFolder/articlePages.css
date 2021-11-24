@@ -151,6 +151,103 @@
   }
 }
 @media screen and (min-width: 760px) {
+  /*Weather Summary*/
+  div#weatherSummaryContent_holder {
+    font-size: 1.25rem;
+    top: 50px;
+    padding: 15px;
+    left: 5%;
+  }
+
+  /*5 DAY FORECAST*/
+  div#fiveDayForecaset_holder > ul > li > p {
+    font-size: 2em;
+  }
+
+  li > i.weatherIcon {
+    font-size: 2rem;
+  }
+
+  div#fiveDayForecaset_holder > ul > li > p:nth-of-type(2) {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 1200px) {
+  /*HERO*/
+  #heroElement_holder {
+    position: relative;
+    display: block;
+    height: 35vw;
+    margin-bottom: 25px;
+  }
+
+  #heroImg {
+    width: 100%;
+    height: 35vw;
+  }
+
+  /*WEATHER SUMMARY*/
+  div#weatherSummaryContent_holder {
+    /* border: 1px solid white; */
+    width: 25%;
+    display: block;
+    position: absolute;
+    padding: 30px;
+    top: 50px;
+    left: 40px;
+    font-size: 1.5em;
+    /* margin: 0 auto; */
+  }
+
+  h3#weatherSummary_header {
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  /*5DAYFORECAST*/
+  div#fiveDayForecaset_holder {
+    background-color: #66787b;
+  }
+  div#fiveDayForecaset_holder > ul {
+    /* width: 100%;
+    list-style: none; */
+    /* display: flex; */
+    /* padding: 0; */
+    margin: 0 auto;
+    /* justify-content: center; */
+    /* margin-bottom: -15px; */
+  }
+  div#fiveDayForecaset_holder > ul > li > p {
+    font-size: 3em;
+  }
+
+  li > i.weatherIcon {
+    font-size: 3rem;
+  }
+
+  div#fiveDayForecaset_holder > ul > li > p:nth-of-type(2) {
+    font-size: 2rem;
+  }
+
+  /*Main Article*/
+  .article {
+    /* background-color: white; */
+    display: flex;
+  }
+
+  div#mainArticles_content1 {
+    display: flex;
+  }
+
+  div#mainArticles_text1 > h4 {
+  }
+  div#mainArticles_text1 > p {
+  }
+
+  .articleImg {
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 100%;
+    height: 40%;
+  }
 }

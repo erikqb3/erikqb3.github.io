@@ -32,8 +32,25 @@ else {
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
 // MAP ON ARTICLE PAGES ONLY
-const fromPortal = window.location.href
-const fromLiveServer = window.location.href
+
+let articlePage = document.getElementsByClassName("articlePage");
+let isArticle = false;
+
+if (articlePage.length == 0) {
+    console.log("Not Article Page");
+}
+else {
+    console.log(articlePage);
+    isArticle = true;
+}
+console.log(isArticle);
+
+
+if (isArticle == true) {
+    footer = document.getElementsByTagName("footer");
+    footer[0].classList.add("articleFooter");
+}
+else{};
 
 
 // if currentPage == 

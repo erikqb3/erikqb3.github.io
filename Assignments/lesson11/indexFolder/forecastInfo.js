@@ -6,9 +6,9 @@ nextFiveDays();
 fiveDayForecast(usableStuff);
 
 function startingVariables () {
-  const prestonPage = "https://erikqb3.github.io/Assignments/lesson10/preston-10.html";
-  const sodaSpringsPage = "";
-  const fishHavenPage = "";
+  const prestonPage = "http://127.0.0.1:5502/Assignments/lesson11/prestonFolder/preston.html"; //temporarily use live server
+  const sodaSpringsPage = "http://127.0.0.1:5502/Assignments/lesson11/sodaSpringsFolder/sodaSprings.html";
+  const fishHavenPage = "http://127.0.0.1:5502/Assignments/lesson11/fishHavenFolder/fishHaven.html";
   
   let key = ""
   let cityID = ""
