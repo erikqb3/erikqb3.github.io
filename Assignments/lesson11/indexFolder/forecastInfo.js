@@ -1,5 +1,3 @@
-// console.log("Hellow! I'm Honest");
-// console.log(window.location.href);
 let usableStuff = startingVariables();
 weatherSummary(usableStuff);
 nextFiveDays();
@@ -19,15 +17,15 @@ function startingVariables () {
   
   switch (currentPage) {
     case prestonPage:
-      console.log("You are on the Preston Page");
+      // console.log("You are on the Preston Page");
       cityID = 5604473;
       break;
     case sodaSpringsPage:
-      console.log("You are on the Soda Springs Page");
+      // console.log("You are on the Soda Springs Page");
       cityID = 5607916;
       break;
     case fishHavenPage:
-      console.log("You are on the Fish Haven Page");
+      // console.log("You are on the Fish Haven Page");
       cityID = 5585010;
       break;
     default:
@@ -67,8 +65,8 @@ async function weatherSummary (usableStuff) {
       document.getElementById('windSpeed').textContent = jsObject.wind.speed;
       calcWindSpeed(jsObject)
 
-      console.log(jsObject)
-      console.log(jsObject.main.temp_max)
+      // console.log(jsObject)
+      // console.log(jsObject.main.temp_max)
 
 
   })
@@ -100,7 +98,7 @@ function fiveDayForecast(usableStuff) {
   fetch(usableStuff[2])
     .then((response) => response.json())
     .then((jsObject) => {
-      console.log('forecastWeather', jsObject);
+      // console.log('forecastWeather', jsObject);
       const forecastTemps = document.querySelectorAll('.forecastTemp');
       const forecastIcons = document.querySelectorAll('.weatherIcon');
       for (i = 0; i < 5; i++) {

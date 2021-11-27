@@ -190,7 +190,7 @@
   }
   #name {
     font-size: 3rem;
-    margin-top: 15px;
+    /* margin-top: 15px; */
   }
   #motto {
     font-size: 1rem;
@@ -276,7 +276,7 @@
   #logo {
     width: 100px;
     height: 100px;
-    margin: 0;
+    /* margin: 0; */
     /* margin-left: 5%; */
     /* margin: 0; */
   }

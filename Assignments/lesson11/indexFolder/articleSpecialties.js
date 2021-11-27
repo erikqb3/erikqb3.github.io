@@ -7,7 +7,7 @@ async function myFetch() {
 }
 
 myFetch().then((jsonData) => {
-  console.log(jsonData.towns);
+  // console.log(jsonData.towns);
   main(jsonData);
 })
 
@@ -28,17 +28,17 @@ function main (jsonData) {
       indexNumber = 6;
       prestonPancakes();
       setupEventHolder(jsonData,indexNumber);
-      console.log("You are on the Preston Page");
+      // console.log("You are on the Preston Page");
       break;
     case sodaSpringsPage:
       indexNumber = 0;
       setupEventHolder(jsonData,indexNumber);
-      console.log("You are on the Soda Springs Page");
+      // console.log("You are on the Soda Springs Page");
       break;
     case fishHavenPage:
       indexNumber = 2;
       setupEventHolder(jsonData,indexNumber);
-      console.log("You are on the Fish Haven Page");
+      // console.log("You are on the Fish Haven Page");
       break;
     default:
   }
@@ -48,7 +48,7 @@ function main (jsonData) {
 function prestonPancakes () {
   const date = new Date();
   const today = date.getDay();
-  console.log(today);
+  // console.log(today);
   
   if ((today == 5) || (today == 6)) {
       let newArticle_holder = document.createElement("div");
@@ -88,7 +88,7 @@ function prestonPancakes () {
 }
 
 function setupEventHolder(jsonData,indexNumber) {
-  console.log(indexNumber)
+  // console.log(indexNumber)
   let fullArticleHolder = document.getElementById("articleHolder")
   let newArticle_holder = document.createElement("div");
   newArticle_holder.classList.add('naHolder');
@@ -100,14 +100,14 @@ function setupEventHolder(jsonData,indexNumber) {
   let articleHeader = document.createElement("h4");
   articleHeader.innerHTML = "Events"
   let articleList = document.createElement("ul");
-  console.log(jsonData.towns[indexNumber].name,jsonData.towns[indexNumber].events)
+  // console.log(jsonData.towns[indexNumber].name,jsonData.towns[indexNumber].events)
   for (i=0; i < jsonData.towns[indexNumber].events.length; i++) {
-    console.log(jsonData.towns[indexNumber].events[i]);
+    // console.log(jsonData.towns[indexNumber].events[i]);
     let articleListItem = document.createElement('li');
     articleListItem.innerHTML = jsonData.towns[indexNumber].events[i];
     articleList.appendChild(articleListItem)
   }
-  console.log(articleList);
+  // console.log(articleList);
 
   newArticle_holder.classList.add("article");
   newArticle_holder.appendChild(newArticle_content);

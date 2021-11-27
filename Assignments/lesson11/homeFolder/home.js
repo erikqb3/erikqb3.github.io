@@ -1,5 +1,3 @@
-console.log("Hellow! I'm Honest!")
-
 async function myFetch() {
   let response = await fetch("https://byui-cit230.github.io/weather/data/towndata.json")
   if (!response.ok) {
@@ -9,7 +7,7 @@ async function myFetch() {
 }
 
 myFetch().then((jsonData) => {
-  console.log(jsonData.towns)
+  // console.log(jsonData.towns)
   let prestonInfo = jsonData.towns[6];
   let sodaSpringsInfo = jsonData.towns[0];
   let fishHavenInfo = jsonData.towns[2];
@@ -41,7 +39,7 @@ function displayTownInfo(townInfo) {
   townPopulation.innerHTML = `Population: ${townInfo.currentPopulation}`;
   townRainFall.innerHTML = `Average Rain Fall: ${townInfo.averageRainfall}`;
   
-  console.log(townInfo.photo);
+  // console.log(townInfo.photo);
   townImage.setAttribute('src',townInfo.photo);
 
 

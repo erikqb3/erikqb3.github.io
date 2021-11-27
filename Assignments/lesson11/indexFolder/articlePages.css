@@ -14,7 +14,9 @@
     /* height: */
     width: 90%;
   }
-
+  header > div.centralContent {
+    margin: 0;
+  }
   #contentHolder {
     background-color: white;
     /* height: 50px; */
