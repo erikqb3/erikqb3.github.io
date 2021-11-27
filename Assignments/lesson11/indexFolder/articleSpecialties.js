@@ -7,32 +7,38 @@ async function myFetch() {
 }
 
 myFetch().then((jsonData) => {
-  console.log(jsonData.towns)
+  console.log(jsonData.towns);
+  main(jsonData);
 })
 
 
 
-function main () {
+function main (jsonData) {
   const prestonPage = "http://127.0.0.1:5502/Assignments/lesson11/prestonFolder/preston.html"; //temporarily use live server
   const sodaSpringsPage = "http://127.0.0.1:5502/Assignments/lesson11/sodaSpringsFolder/sodaSprings.html";
   const fishHavenPage = "http://127.0.0.1:5502/Assignments/lesson11/fishHavenFolder/fishHaven.html";
+  let indexNumber;
   
-  
+  // console.log(jsonData);
   
   const currentPage = window.location.href;
   
   switch (currentPage) {
     case prestonPage:
-      prestonPancakes()
+      indexNumber = 6;
+      prestonPancakes();
+      setupEventHolder(jsonData,indexNumber);
       console.log("You are on the Preston Page");
       break;
     case sodaSpringsPage:
+      indexNumber = 0;
+      setupEventHolder(jsonData,indexNumber);
       console.log("You are on the Soda Springs Page");
-      cityID = 5607916;
       break;
     case fishHavenPage:
+      indexNumber = 2;
+      setupEventHolder(jsonData,indexNumber);
       console.log("You are on the Fish Haven Page");
-      cityID = 5585010;
       break;
     default:
   }
@@ -46,12 +52,12 @@ function prestonPancakes () {
   
   if ((today == 5) || (today == 6)) {
       let newArticle_holder = document.createElement("div");
-      newArticle_holder.classList.add('naHolder')
+      newArticle_holder.classList.add('naHolder');
       let newArticle_content = document.createElement("div");
-      newArticle_content.classList.add('naContent')
+      newArticle_content.classList.add('naContent');
       // newArticle_content.classList.add('acticleContent')
       let newArticle_text = document.createElement('div');
-      newArticle_text.classList.add('naText')
+      newArticle_text.classList.add('naText');
       let articleHeader = document.createElement("h4");
       let articleText = document.createElement("p");
       let articlePic = document.createElement('img');
@@ -81,5 +87,32 @@ function prestonPancakes () {
   }
 }
 
+function setupEventHolder(jsonData,indexNumber) {
+  console.log(indexNumber)
+  let fullArticleHolder = document.getElementById("articleHolder")
+  let newArticle_holder = document.createElement("div");
+  newArticle_holder.classList.add('naHolder');
+  let newArticle_content = document.createElement("div");
+  newArticle_content.classList.add('naContent');
+  // newArticle_content.classList.add('acticleContent')
+  let newArticle_text = document.createElement('div');
+  newArticle_text.classList.add('naText');
+  let articleHeader = document.createElement("h4");
+  articleHeader.innerHTML = "Events"
+  let articleList = document.createElement("ul");
+  console.log(jsonData.towns[indexNumber].name,jsonData.towns[indexNumber].events)
+  for (i=0; i < jsonData.towns[indexNumber].events.length; i++) {
+    console.log(jsonData.towns[indexNumber].events[i]);
+    let articleListItem = document.createElement('li');
+    articleListItem.innerHTML = jsonData.towns[indexNumber].events[i];
+    articleList.appendChild(articleListItem)
+  }
+  console.log(articleList);
 
-main()
+  newArticle_holder.classList.add("article");
+  newArticle_holder.appendChild(newArticle_content);
+  newArticle_content.appendChild(newArticle_text);
+  newArticle_text.appendChild(articleHeader);
+  newArticle_text.appendChild(articleList);
+  fullArticleHolder.appendChild(newArticle_holder);
+}

@@ -9,7 +9,7 @@ async function myFetch() {
 }
 
 myFetch().then((jsonData) => {
-  // console.log(jsonData.towns)
+  console.log(jsonData.towns)
   let prestonInfo = jsonData.towns[6];
   let sodaSpringsInfo = jsonData.towns[0];
   let fishHavenInfo = jsonData.towns[2];
