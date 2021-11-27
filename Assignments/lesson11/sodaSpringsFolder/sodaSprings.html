@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="/Assignments/assignmentPortalStuff/medium.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
     <link rel="stylesheet" href="../indexFolder/TTBF_index.css">
+    <link rel="stylesheet" href="../indexFolder/articlePages.css">
     <link rel="shortcut icon" href="../indexFolder/TTBF_img/favicon(1).png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
   />
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script> -->
-    <script src="../indexFolder/TTBF_preston/preston-7.js" defer></script>
+    <!-- <script src="../indexFolder/TTBF_preston/preston-7.js" defer></script> -->
     <!-- <script src="../indexFolder/windchill.js" defer></script> Scrap once forecast is made with windchill added -->
     <script src="../indexFolder/forecastInfo.js" defer></script>
     <script src="../indexFolder/TTBF_index.js" defer></script>
@@ -34,22 +35,22 @@
     </header>
     <nav id="navBar">
       <ul>
-          <li><a href ="/Assignments/lesson9/index.html">Home</a></li>
-          <li id="currentTab"><a href="preston-7.html">Preston</a></li>
-          <li><a href ="../../../index.html">Soda Springs</a></li>
-          <li><a href ="../../../index.html">Fish Haven</a></li>
-          <li><a href ="../TTBF_stormCenter/stormCenter.html">Storm Center</a></li>
-          <li><a href ="../TTBF_gallery/gallery-7.html">Gallery</a></li>
+          <li><a href ="../homeFolder/index.html">Home</a></li>
+          <li><a href="../prestonFolder/preston.html">Preston</a></li>
+          <li id="currentTab"><a href ="sodaSprings.html">Soda Springs</a></li>
+          <li><a href ="../fishHavenFolder/fishHaven.html">Fish Haven</a></li>
+          <li><a href ="../stormCenterFolder/stormCenter.html">Storm Center</a></li>
+          <li><a href ="../galleryFolder/gallery.html">Gallery</a></li>
       </ul>
   </nav>
     <main>
-        <h1 class="centralContent">Preston Idaho</h1>
+        <h1 class="centralContent">Soda Springs Idaho</h1>
 
         <div id="heroElement_holder" class="centralContent">
           <picture>
-            <source srcset="../indexFolder/TTBF_preston/preston-7_img/PrestonHero_1000_medium.jpg" media="(min-width:760px) and (max-width:1200px)" alt="PresvtonHero_medium">
-            <source srcset="../indexFolder/TTBF_preston/preston-7_img/PrestonHero_1500_large.jpg" media="(min-width:1200px)" alt="PrestonHero_large">
-            <img class="centralContent" id="heroImg" src="../indexFolder/TTBF_preston/preston-7_img/PrestonHero_500_small.jpg" alt = "PrestonHero_small">
+            <source srcset="../sodaSpringsFolder/sodaSprings1000px.jpg" media="(min-width:760px) and (max-width:1200px)" alt="SodaSprings_medium">
+            <source srcset="../sodaSpringsFolder/sodaSprings1500px.jpg" media="(min-width:1200px)" alt="SodaSprings_large">
+            <img class="centralContent" id="heroImg" src="../sodaSpringsFolder/sodaSprings500px.jpg" alt = "SodaSprings_small">
           </picture>
             <!-- <img src="preston-6_img/img_holder.png" class="centralContent" id="heroImg" alt="pictureHolder" > -->
             <div id="weatherSummaryContent_holder">
@@ -84,16 +85,12 @@
               <p><span class="forecastTemp">0</span> °F</p></li>
           </ul>
         </div>
-        <div class="centralContent article">
-            <div id="mainArticles_content1">
-                <div id="mainArticles_text1">
+        <div id="articleHolder" class="centralContent">
+            <div class="article">
+                <div class="articleText">
                     <h4>Article Title</h4>
-                    <p id="mainArticles_text1_p1">Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, Filler Text, </p>
+                    <p id="mainArticles_text1_p1">Soda Springs is a city in Caribou County, Idaho, United States. Its population was 3,058 at the 2010 census. The city has been the county seat of Caribou County since the county was organized in 1919. In the 1860s, Soda Springs served as the seat of Oneida County.<br><br>The city is named for the hundreds of natural springs of carbonated water that are located in and around the city. The springs were well known to Native Americans and were a famous landmark along the Oregon Trail in the middle 19th century. Today the city is also known as the location of the Soda Springs Geyser, which was unleashed in 1934 when "town fathers" were looking for hot water for a "hot pool" bathing attraction. Instead they drilled into a chamber of highly pressurized carbon dioxide gas and cold water and the geyser was released. After running for weeks, and flooding the downtown area, it was capped and manually released when requested as a tourist attraction. Now it is let loose every hour on the hour by a timed release valve. Its height and volume have not decreased after many years. There are viewing platforms at either end of the travertine mound where the geyser erupts. Interpretive signs are located on the platforms explaining this phenomenon.<br><br>Soda Springs is also the location of one of the Ground Observer Corps sites.</p>
                 </div>
-                <picture class="imageHolder">
-                  <source srcset="../indexFolder/TTBF_preston/preston-7_img/Pancakes.jpg" media="(min-width:1050px)" alt="PrestonHero_large">
-                  <img src="../indexFolder/TTBF_preston/preston-7_img/Pancakes_small.jpg" class="articleImg" alt="pictureHolder">
-                </picture>
             </div>
         </div>
         <div class="centralContent" id="mainArticle"></div>

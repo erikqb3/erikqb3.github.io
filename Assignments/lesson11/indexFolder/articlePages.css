@@ -21,9 +21,12 @@
     width: 90%;
     margin: 0 auto;
   }
-  h1 {
+  h1.centralContent {
     /* font-size: em; */
     font-family: 'Snippet', sans-serif;
+    /* color: red; */
+    margin-top: 50px;
+    font-size: 2.75rem;
   }
 
   /*MAIN CONTENT - HERO*/
@@ -32,11 +35,13 @@
     display: block;
     height: 35vw;
     margin-bottom: 30px;
+    border: 2.5px solid black;
   }
 
   #heroImg {
     width: 100%;
     height: 35vw;
+    margin: 0;
   }
 
   /*WEATHER SUMMARY*/
@@ -75,13 +80,12 @@
     padding: 0;
     margin: 0 auto;
     justify-content: center;
-    margin-bottom: -15px;
     border: 0.25px solid rgba(0, 0, 0, 0.15);
   }
   div#fiveDayForecaset_holder > ul > li {
     text-align: center;
     width: 100%;
-    padding: 15px 0 10px 0;
+    padding: 10px 0 5px 0;
     /* margin: 15px 0px; */
     border: 0.25px solid rgba(0, 0, 0, 0.15);
   }
@@ -92,14 +96,14 @@
     display: block;
     color: #f4db0f;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 10px auto;
   }
 
   li > p {
     text-align: center;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 0 auto;
     /* margin-top: 15px; */
     font-family: 'Snippet', sans-serif;
@@ -107,34 +111,52 @@
 
   li > p:nth-of-type(2) {
     margin-top: 20px;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   /*Main Articles*/
+
+  div#articleHolder {
+    display: block;
+  }
   .article {
     background-color: white;
     display: block;
     min-height: 100px;
     max-height: 400px;
+    margin: 25px auto 0 auto;
+    padding-bottom: 15px;
   }
 
-  div#mainArticles_content1 {
+  /* div#mainArticles_content1 {
     display: block;
     width: 80%;
-    /* height: 500px; */
     margin: 0 auto;
-  }
-  div#mainArticles_text1 {
+  } */
+
+  div#articleHolder > div > div {
     width: 75%;
+    margin: 0 auto;
+    display: block;
   }
 
-  div#mainArticles_text1 > h4 {
+  /* }
+  div#mainArticles_text1 {
+    width: 75%;
+    margin: 0 auto;
+  } */
+
+  div#articleHolder > div > div > h4,
+  div#articleHolder > div > div > div > h4 {
     padding-top: 15px;
     /* width: 75%; */
     margin: 0;
   }
-  div#mainArticles_text1 > p {
+  div#articleHolder > div > div > p,
+  div#articleHolder > div > div > div > p {
+    display: block;
     padding-bottom: 10px;
+    /* margin-bottom: 15px; */
     /* width: 75%; */
     margin: 0;
   }
@@ -144,9 +166,9 @@
 
   .articleImg {
     display: block;
-    width: 80%;
+    width: 100%;
     height: 100%;
-    margin: 0px auto;
+    /* margin: 0px auto; */
     padding-bottom: 10px;
   }
 }
@@ -215,7 +237,6 @@
     /* padding: 0; */
     margin: 0 auto;
     /* justify-content: center; */
-    /* margin-bottom: -15px; */
   }
   div#fiveDayForecaset_holder > ul > li > p {
     font-size: 3em;
@@ -235,8 +256,9 @@
     display: flex;
   }
 
-  div#mainArticles_content1 {
+  div#articleHolder > div > div.naContent {
     display: flex;
+    padding-top: 15px;
   }
 
   div#mainArticles_text1 > h4 {
@@ -244,10 +266,12 @@
   div#mainArticles_text1 > p {
   }
 
-  .articleImg {
-    margin-top: 40px;
-    margin-left: 10px;
-    width: 100%;
-    height: 40%;
+  div#articleHolder > div > div.naContent > img.articleImg {
+    /* margin-top: 40px;
+    margin-left: 10px; */
+    margin: 0 0 0 auto;
+    /* padding: 15px; */
+    width: 50%;
+    /* height: 40%; */
   }
 }

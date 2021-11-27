@@ -10,7 +10,7 @@ function startingVariables () {
   const sodaSpringsPage = "http://127.0.0.1:5502/Assignments/lesson11/sodaSpringsFolder/sodaSprings.html";
   const fishHavenPage = "http://127.0.0.1:5502/Assignments/lesson11/fishHavenFolder/fishHaven.html";
   
-  let key = ""
+  let key = "fa5461ada34b7f39fee29ec7f416ffb6";
   let cityID = ""
   let apiURL = ""
   
@@ -20,18 +20,20 @@ function startingVariables () {
   switch (currentPage) {
     case prestonPage:
       console.log("You are on the Preston Page");
-      key = "fa5461ada34b7f39fee29ec7f416ffb6";
       cityID = 5604473;
-      apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`
       break;
     case sodaSpringsPage:
       console.log("You are on the Soda Springs Page");
+      cityID = 5607916;
       break;
     case fishHavenPage:
       console.log("You are on the Fish Haven Page");
+      cityID = 5585010;
       break;
     default:
   }
+
+  apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`
 
 let currentWeatherAPI = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${key}`
 

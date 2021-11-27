@@ -239,7 +239,11 @@
   ul#socialMediaLinks {
     display: flex;
     justify-self: start;
-    margin-left: 40%;
+    margin-left: 47.5%;
+    margin-top: 5%;
+    grid-row: 1/3;
+    grid-column: 2;
+    padding: 0;
   }
   ul#socialMediaLinks > li > img {
     margin: 0 2.5px;
@@ -395,71 +399,86 @@
   }
 
   /*FOOTER*/
-  footer {
+  footer > ul#socialMediaLinks {
+    margin-left: 63.5%;
+  }
+
+  footer.articleFooter {
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: 1fr 1fr;
+    /* background-color: red; */
+  }
+  footer.articleFooter > a#locationMap_link {
+    /* display: block; */
+    width: 400px;
+    margin: 10px auto;
+    grid-row: 1/ 3;
+    /* display: flex; */
+    /* justify-self: center; */
+    /* border: 10px solid black; */
   }
 
-  footer > a > img#locationMap {
-    /* display: flex; */
+  footer.articleFooter > a > img#locationMap {
     /* align-items: top; */
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 17.5%;
+    left: 17.5%; */
     grid-column: 1;
     grid-row: 1/ 3;
     width: 400px;
     height: 250px;
     margin-top: 20px;
   }
-  footer > h4#contactInfo_label,
-  footer > ul {
+  footer.articleFooter > #contactInfo_holder > h4#contactInfo_label,
+  footer.articleFooter > #contactInfo_holder > ul {
     grid-column: 2;
     grid-row: 1 / 2;
   }
 
-  #contactInfo_holder {
+  footer.articleFooter > #contactInfo_holder > #contactInfo_holder {
     grid-column: 2;
   }
 
-  #contactInfo_label {
+  footer.articleFooter > #contactInfo_holder > #contactInfo_label {
     margin: 0;
   }
 
-  ul#contactInfo {
+  footer.articleFooter > #contactInfo_holder > ul#contactInfo {
     margin: 0;
     list-style: none;
     padding-left: 0;
     color: white;
   }
-  ul#contactInfo > li {
-    margin: 20px 0;
+  footer.articleFooter > #contactInfo_holder > ul#contactInfo > li {
+    margin: 15px 0;
   }
 
-  ul#socialMediaLinks {
+  footer.articleFooter > ul#socialMediaLinks {
     display: flex;
     grid-column: 2;
     grid-row: 2;
     list-style: none;
-    /* display: flex; */
+    margin-left: 5%;
     padding: 0;
   }
 
-  ul#socialMediaLinks > li > img {
+  footer.articleFooter > ul#socialMediaLinks > li > img {
     /* display: flex; */
     list-style: none;
     width: 50px;
     margin: 0;
-    margin-left: 25px;
+    margin-right: 25px;
   }
 
-  #timeDateStuff > p {
+  footer.articleFooter > #timeDateStuff > p#lastUpdated {
     /* width: 80%; */
     grid-column: 1/2;
     grid-row: 3;
     color: #f4db0f;
     text-align: center;
+    width: 400px;
+    margin: 0 auto;
     /* margin: 0 auto; */
     /* padding: 10px 0; */
   }
