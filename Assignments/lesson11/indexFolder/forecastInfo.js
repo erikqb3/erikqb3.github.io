@@ -4,9 +4,12 @@ nextFiveDays();
 fiveDayForecast(usableStuff);
 
 function startingVariables () {
-  const prestonPage = "https://erikqb3.github.io/Assignments/lesson11/prestonFolder/preston.html"; //temporarily use live server
+  const prestonPage = "https://erikqb3.github.io/Assignments/lesson11/prestonFolder/preston.html"; //github
   const sodaSpringsPage = "https://erikqb3.github.io/Assignments/lesson11/sodaSpringsFolder/sodaSprings.html";
   const fishHavenPage = "https://erikqb3.github.io/Assignments/lesson11/fishHavenFolder/fishHaven.html";
+  const prestonPage_temp = "http://127.0.0.1:5502/Assignments/lesson11/prestonFolder/preston.html"; //live server
+  const sodaSpringsPage_temp = "http://127.0.0.1:5502/Assignments/lesson11/sodaSpringsFolder/sodaSprings.html";
+  const fishHavenPage_temp = "http://127.0.0.1:5502/Assignments/lesson11/fishHavenFolder/fishHaven.html";
   
   let key = "fa5461ada34b7f39fee29ec7f416ffb6";
   let cityID = ""
@@ -17,14 +20,17 @@ function startingVariables () {
   
   switch (currentPage) {
     case prestonPage:
+    case prestonPage_temp:
       // console.log("You are on the Preston Page");
       cityID = 5604473;
       break;
     case sodaSpringsPage:
+    case sodaSpringsPage_temp:
       // console.log("You are on the Soda Springs Page");
       cityID = 5607916;
       break;
     case fishHavenPage:
+    case fishHavenPage_temp:
       // console.log("You are on the Fish Haven Page");
       cityID = 5585010;
       break;

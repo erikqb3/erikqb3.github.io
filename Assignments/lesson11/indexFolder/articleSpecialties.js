@@ -14,9 +14,12 @@ myFetch().then((jsonData) => {
 
 
 function main (jsonData) {
-  const prestonPage = "https://erikqb3.github.io/Assignments/lesson11/prestonFolder/preston.html"; //temporarily use live server
+  const prestonPage = "https://erikqb3.github.io/Assignments/lesson11/prestonFolder/preston.html"; //github
   const sodaSpringsPage = "https://erikqb3.github.io/Assignments/lesson11/sodaSpringsFolder/sodaSprings.html";
   const fishHavenPage = "https://erikqb3.github.io/Assignments/lesson11/fishHavenFolder/fishHaven.html";
+  const prestonPage_temp = "http://127.0.0.1:5502/Assignments/lesson11/prestonFolder/preston.html"; //live server
+  const sodaSpringsPage_temp = "http://127.0.0.1:5502/Assignments/lesson11/sodaSpringsFolder/sodaSprings.html";
+  const fishHavenPage_temp = "http://127.0.0.1:5502/Assignments/lesson11/fishHavenFolder/fishHaven.html";
   let indexNumber;
   
   // console.log(jsonData);
@@ -25,17 +28,20 @@ function main (jsonData) {
   
   switch (currentPage) {
     case prestonPage:
+    case prestonPage_temp:
       indexNumber = 6;
       prestonPancakes();
       setupEventHolder(jsonData,indexNumber);
       // console.log("You are on the Preston Page");
       break;
     case sodaSpringsPage:
+    case sodaSpringsPage_temp:
       indexNumber = 0;
       setupEventHolder(jsonData,indexNumber);
       // console.log("You are on the Soda Springs Page");
       break;
     case fishHavenPage:
+    case fishHavenPage_temp:
       indexNumber = 2;
       setupEventHolder(jsonData,indexNumber);
       // console.log("You are on the Fish Haven Page");
