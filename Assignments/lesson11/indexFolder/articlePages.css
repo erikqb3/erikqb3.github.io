@@ -70,6 +70,9 @@
     padding: 0;
     margin: 0;
   }
+  div#weatherSummary_content > p {
+    font-size: 0.45rem;
+  }
 
   /*5DAYFORECAST*/
   div#fiveDayForecaset_holder {
@@ -185,9 +188,12 @@
   /*Weather Summary*/
   div#weatherSummaryContent_holder {
     font-size: 1.25rem;
-    top: 50px;
+    top: 25px;
     padding: 15px;
     left: 5%;
+  }
+  div#weatherSummary_content > p {
+    font-size: 0.7rem;
   }
 
   /*5 DAY FORECAST*/
@@ -233,6 +239,9 @@
   h3#weatherSummary_header {
     margin-bottom: 10px;
     margin-top: 0;
+  }
+  div#weatherSummary_content > p {
+    font-size: 1rem;
   }
 
   /*5DAYFORECAST*/
