@@ -4,6 +4,7 @@ fieldset {
   width: 90%;
   border-radius: 10px;
   font-family: 'Roboto Mono';
+  background-color: #9ab6bb;
   /* padding: 15px; */
   /* border: 1px solid black; */
 }
