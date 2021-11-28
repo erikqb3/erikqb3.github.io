@@ -14,7 +14,8 @@ myFetch().then((jsonData) => {
 
 
 function main (jsonData) {
-  //websites both live and committed
+  //websites both live ...
+  // and committed
   const prestonPage = "https://erikqb3.github.io/Assignments/lesson11/prestonFolder/preston.html"; //github
   const sodaSpringsPage = "https://erikqb3.github.io/Assignments/lesson11/sodaSpringsFolder/sodaSprings.html";
   const fishHavenPage = "https://erikqb3.github.io/Assignments/lesson11/fishHavenFolder/fishHaven.html";
