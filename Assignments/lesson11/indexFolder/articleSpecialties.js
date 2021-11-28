@@ -14,9 +14,9 @@ myFetch().then((jsonData) => {
 
 
 function main (jsonData) {
-  const prestonPage = "http://127.0.0.1:5502/Assignments/lesson11/prestonFolder/preston.html"; //temporarily use live server
-  const sodaSpringsPage = "http://127.0.0.1:5502/Assignments/lesson11/sodaSpringsFolder/sodaSprings.html";
-  const fishHavenPage = "http://127.0.0.1:5502/Assignments/lesson11/fishHavenFolder/fishHaven.html";
+  const prestonPage = "https://erikqb3.github.io/Assignments/lesson11/prestonFolder/preston.html"; //temporarily use live server
+  const sodaSpringsPage = "https://erikqb3.github.io/Assignments/lesson11/sodaSpringsFolder/sodaSprings.html";
+  const fishHavenPage = "https://erikqb3.github.io/Assignments/lesson11/fishHavenFolder/fishHaven.html";
   let indexNumber;
   
   // console.log(jsonData);
