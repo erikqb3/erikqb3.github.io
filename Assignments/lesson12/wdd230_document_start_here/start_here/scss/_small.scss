@@ -1,0 +1,91 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* body rules */
+body {
+  font-family: $fontFamily;
+  font-size: 16px;
+}
+
+header {
+  background-color: $ChristmasGreen;
+  padding: 1rem $gutter;
+  h1 {
+    margin: 0;
+    font-size: $heavyWeight;
+    color: $ChristmasRed;
+  } // end of h1
+  h2 {
+    margin: 0;
+    font-size: $regularWeight;
+    font-weight: normal;
+  } //end of h2
+} //end of header
+
+nav {
+  background-color: $ChristmasRed;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+  li.active {
+    background-color: $ChristmasRed - #440000;
+  }
+  a {
+    display: block;
+    padding: 0.8rem 0; /*44px min*/
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+  }
+  a:hover {
+    background-color: $ChristmasRed - #220000;
+  }
+}
+main {
+  display: block;
+  padding: 1rem $gutter;
+
+  h1 {
+    color: $ChristmasGreen;
+    font-weight: $heavyWeight;
+  }
+
+  figure {
+    margin: 0;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+footer {
+  background-color: $ChristmasGreen;
+  text-align: center;
+  padding: 1rem $gutter;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
