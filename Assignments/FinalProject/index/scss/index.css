@@ -354,7 +354,7 @@ p {
 }
 
 body {
-  background-color: #282828;
+  background-color: whitesmoke;
   position: relative;
   color: white;
   min-height: 100vh;
@@ -362,7 +362,7 @@ body {
 }
 
 header {
-  background-color: #4b2b6d;
+  background-color: red;
   color: #f7f052;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -393,7 +393,7 @@ header img#logo {
 }
 
 header button {
-  background-color: #4b2b6d;
+  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,7 +418,7 @@ nav ul li {
   border: 1px solid rgba(0, 0, 0, 0.25);
   font-size: 1rem;
   line-height: 2rem;
-  background-color: #505050;
+  background-color: #f7f052;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -444,7 +444,7 @@ nav ul li a:active {
 }
 
 footer {
-  background-color: #331c4b;
+  background-color: maroon;
   display: block;
   min-height: 50px;
   width: 100%;

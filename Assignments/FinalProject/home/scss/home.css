@@ -1,6 +1,6 @@
 main > div#table {
   margin: 25px auto;
-  width: 80%;
+  width: 60%;
   min-height: 500px;
   display: -ms-grid;
   display: grid;
@@ -14,6 +14,7 @@ main > div#table div.object {
   position: relative;
   -webkit-box-shadow: 2.5px 2.5px 5px black;
           box-shadow: 2.5px 2.5px 5px black;
+  border: 2.5px solid orange;
 }
 
 main > div#table div.object a > img,
@@ -72,7 +73,7 @@ main > div#table div.object a:hover div.label {
     -ms-grid-row-span: 3;
     grid-row: 1/4;
   }
-  main > div#table div#G_holder {
+  main > div#table div#GL_holder {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2/3;

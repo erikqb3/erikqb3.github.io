@@ -12,7 +12,9 @@ p {
 
 //BODY
 body {
-  background-color: #282828;
+  // background-color: #282828;
+  // background-color: white;
+  background-color: whitesmoke;
   position: relative;
   color: white;
   min-height: 100vh;
@@ -21,7 +23,8 @@ body {
 
 //HEADER
 header {
-  background-color: #4b2b6d;
+  // background-color: #4b2b6d;
+  background-color: red;
   color: #f7f052;
   display: flex;
   h1 {
@@ -40,7 +43,7 @@ header {
     align-self: center;
   }
   button {
-    background-color: #4b2b6d;
+    background-color: red;
     display: flex;
     align-self: center;
     justify-self: center;
@@ -65,7 +68,8 @@ nav {
       font-size: 1rem;
       // padding: 5px 0 5px;
       line-height: 2rem;
-      background-color: #505050;
+      // background-color: #505050;
+      background-color: #f7f052;
       font-family: Arial, Helvetica, sans-serif;
       a:link {
         display: block;
@@ -78,6 +82,7 @@ nav {
       }
       a:hover {
         background-color: #4b2b6d;
+        // background-color: aqua;
         color: white;
       }
       a:active {
@@ -90,7 +95,8 @@ nav {
 
 //FOOTER
 footer {
-  background-color: #331c4b;
+  // background-color: #331c4b;
+  background-color: maroon;
   display: block;
   min-height: 50px;
   width: 100%;

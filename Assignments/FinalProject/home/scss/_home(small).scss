@@ -1,7 +1,7 @@
 main > div#table {
   // background-color: white;
   margin: 25px auto;
-  width: 80%;
+  width: 60%;
   min-height: 500px;
   display: grid;
   grid-template-rows: 200px 100px 100px 100px 100px;
@@ -11,6 +11,7 @@ main > div#table {
     background-color: white;
     position: relative;
     box-shadow: 2.5px 2.5px 5px black;
+    border: 2.5px solid orange;
 
     a > img,
     a {
