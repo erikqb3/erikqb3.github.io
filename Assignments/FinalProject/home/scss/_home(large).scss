@@ -1,0 +1,32 @@
+body {
+  // background-color: orange;
+}
+
+main > div#table {
+  grid-column-gap: 15px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 50px auto;
+  max-height: 500px;
+
+  div#FA_holder {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+  div#G_holder {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  div#LI_holder {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+  div#C_holder {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }
+  div#AB_holder {
+    grid-column: 3/4;
+    grid-row: 2/4;
+  }
+}

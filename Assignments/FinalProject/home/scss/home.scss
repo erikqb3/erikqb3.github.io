@@ -1,0 +1,8 @@
+@import '_home(small)';
+
+@media only screen and (min-width: 760px) {
+  @import '_home(medium)';
+}
+@media only screen and (min-width: 1200px) {
+  @import '_home(large)';
+}

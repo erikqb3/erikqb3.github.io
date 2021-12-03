@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&display=swap');
-
 //GENERIC TIDBITS
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&display=swap');
 .hidden {
   display: none;
 }
@@ -14,7 +13,9 @@ p {
 //BODY
 body {
   background-color: #282828;
+  position: relative;
   color: white;
+  min-height: 100vh;
   font-size: 2rem;
 }
 
@@ -90,13 +91,15 @@ nav {
 //FOOTER
 footer {
   background-color: #331c4b;
+  display: block;
   min-height: 50px;
   width: 100%;
-  position: absolute;
+  position: relative;
   bottom: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  // top: 100%;
   div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     margin-top: 15px;
     padding: 15px 0 15px 5%;
   }

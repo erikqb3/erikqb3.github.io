@@ -1,0 +1,106 @@
+main > div#table {
+  margin: 25px auto;
+  width: 80%;
+  min-height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 100px 100px 100px 100px;
+      grid-template-rows: 200px 100px 100px 100px 100px;
+  grid-row-gap: 15px;
+}
+
+main > div#table div.object {
+  background-color: white;
+  position: relative;
+  -webkit-box-shadow: 2.5px 2.5px 5px black;
+          box-shadow: 2.5px 2.5px 5px black;
+}
+
+main > div#table div.object a > img,
+main > div#table div.object a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 1;
+  font-family: 'Cormorant Garamond', serif;
+  text-decoration: none;
+  font-style: italic;
+  color: white;
+  text-shadow: 1.5px 1.5px black;
+}
+
+main > div#table div.object div.label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main > div#table div.object a:hover div.label {
+  top: 75%;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+@media only screen and (min-width: 1200px) {
+  main > div#table {
+    grid-column-gap: 15px;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    margin: 50px auto;
+    max-height: 500px;
+  }
+  main > div#table div#FA_holder {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1/4;
+  }
+  main > div#table div#G_holder {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  main > div#table div#LI_holder {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  main > div#table div#C_holder {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+  }
+  main > div#table div#AB_holder {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+  }
+}
+/*# sourceMappingURL=home.css.map */
