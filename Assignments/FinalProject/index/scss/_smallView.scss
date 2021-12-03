@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&display=swap');
+
+//GENERIC TIDBITS
+.hidden {
+  display: none;
+}
+img, //IMAGES_standard
+p {
+  margin: 0;
+  padding: 0;
+  float: none;
+}
+
 //BODY
 body {
   background-color: #282828;
@@ -7,11 +20,84 @@ body {
 
 //HEADER
 header {
-  background-color: #6a3a9e;
+  background-color: #4b2b6d;
   color: #f7f052;
+  display: flex;
   h1 {
     margin: 0;
-    padding: 15px 0;
-    font-size: 2rem;
+    padding: 30px 0 30px 10px;
+    display: flex;
+    align-self: center;
+    font-size: 2.25rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+  }
+  img#logo {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-self: center;
+  }
+  button {
+    background-color: #4b2b6d;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto 0 auto;
+    border: none;
+    color: #f7f052;
+    font-size: 1.25rem;
+  }
+}
+
+//NAV
+nav {
+  //code
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    li {
+      text-align: center;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      font-size: 1rem;
+      // padding: 5px 0 5px;
+      line-height: 2rem;
+      background-color: #505050;
+      font-family: Arial, Helvetica, sans-serif;
+      a:link {
+        display: block;
+        width: 100%;
+        color: black;
+        text-decoration: none;
+      }
+      a:visited {
+        text-decoration: underline;
+      }
+      a:hover {
+        background-color: #4b2b6d;
+        color: white;
+      }
+      a:active {
+        background-color: #f7f052;
+        color: black;
+      }
+    }
+  }
+}
+
+//FOOTER
+footer {
+  background-color: #331c4b;
+  min-height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  div {
+    margin-top: 15px;
+    padding: 15px 0 15px 5%;
   }
 }

@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -341,6 +342,17 @@ template {
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
+img,
+p {
+  margin: 0;
+  padding: 0;
+  float: none;
+}
+
 body {
   background-color: #282828;
   color: white;
@@ -348,13 +360,99 @@ body {
 }
 
 header {
-  background-color: #6a3a9e;
+  background-color: #4b2b6d;
   color: #f7f052;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header h1 {
   margin: 0;
-  padding: 15px 0;
-  font-size: 2rem;
+  padding: 30px 0 30px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 2.25rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+}
+
+header img#logo {
+  width: 5rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+header button {
+  background-color: #4b2b6d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  margin: 0 auto 0 auto;
+  border: none;
+  color: #f7f052;
+  font-size: 1.25rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+nav ul li {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
+  line-height: 2rem;
+  background-color: #505050;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a:link {
+  display: block;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  text-decoration: underline;
+}
+
+nav ul li a:hover {
+  background-color: #4b2b6d;
+  color: white;
+}
+
+nav ul li a:active {
+  background-color: #f7f052;
+  color: black;
+}
+
+footer {
+  background-color: #331c4b;
+  min-height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+footer div {
+  margin-top: 15px;
+  padding: 15px 0 15px 5%;
 }
 /*# sourceMappingURL=index.css.map */
