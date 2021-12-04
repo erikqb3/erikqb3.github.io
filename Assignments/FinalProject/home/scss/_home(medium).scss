@@ -1,0 +1,27 @@
+main > div#table {
+  // background-color: white;
+  grid-template-rows: 400px 200px 200px;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+
+  div#FA_holder {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  div#GL_holder {
+    grid-column: 1/2;
+    grid-row: 2;
+  }
+  div#LI_holder {
+    grid-column: 2/3;
+    grid-row: 2;
+  }
+  div#C_holder {
+    grid-column: 1/2;
+    grid-row: 3;
+  }
+  div#AB_holder {
+    grid-column: 2/3;
+    grid-row: 3;
+  }
+}
