@@ -1,0 +1,90 @@
+.hidden {
+  display: none;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+
+body {
+  background-color: #339cd5;
+}
+
+header > h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 2rem;
+  margin: 30px auto 15px auto;
+}
+
+header > h1 span {
+  font-size: 1.25rem;
+  color: white;
+}
+
+main div#dataHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main div#dataHolder div {
+  margin: 0 auto 10px auto;
+}
+
+main div#gameScreen_holder {
+  border: 2.5px solid black;
+  width: 80%;
+  margin: 0 auto;
+}
+
+main div#gameScreen_holder div#mainScreen {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  background-color: black;
+}
+
+main div#gameScreen_holder div#mainScreen div {
+  min-height: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main div#gameScreen_holder div#mainScreen #screen_textStream {
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 3;
+  position: absolute;
+}
+
+main div#gameScreen_holder div#mainScreen #screen_textStream div.stream {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+main div#gameScreen_holder div#mainScreen #screen_background {
+  background-image: url("https://image.tmdb.org/t/p/w600_and_h900_bestv2/qG3RYlIVpTYclR9TYIsy8p7m7AT.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  position: absolute;
+  background-color: whitesmoke;
+}
+
+main textarea {
+  display: block;
+  width: 80%;
+  margin: 15px auto;
+  text-align: center;
+  padding: 17.5px 0 0 0;
+}
+/*# sourceMappingURL=FA(main).css.map */

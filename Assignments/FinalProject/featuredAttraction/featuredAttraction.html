@@ -5,19 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../index/imgs/favicon.png">
-  <link href="../index/scss/index.css" rel="stylesheet">
+  <!-- <link href="../index/scss/index.css" rel="stylesheet"> -->
   <!-- <link href="scss/home.css" rel="stylesheet"> -->
+  <link href="scss/FA(main).css" rel="stylesheet">
   <script src="../index/index.js" defer></script>
   <title>Fan-Art Carnival</title>
 </head>
 <body>
-  <header>
+  <!-- <header>
     <img id="logo" src="../index/imgs/Better Logo.png" id="logo image">
     <div id="hamburgurButton_holder">
-      <button id="navMenuButton">&#9776;</button> <!--Nav stuff in other pages-->
+      <button id="navMenuButton">&#9776;</button> 
     </div>
-  </header>
-  <nav id="navBar"> <!--No Nav-->
+  </header> -->
+  <!-- <nav id="navBar">
     <ul>
       <li><a href="../home/index.html">Home</a></li>
       <li><a href="../logIn/logIn.html">Log-In</a></li>
@@ -25,23 +26,45 @@
       <li><a href="../contribute/contribute.html">Contribute</a></li>
       <li><a href="../aboutUs/aboutUs.html">About Us</a></li>
     </ul>
-  </nav>
+  </nav> -->
+  <header> 
+    <h1>Who are you? <span>(Studio Ghibli)</span></h1>
+  </header>
   <main>
+    <div id="dataHolder">
+      <div><span>0</span> Points</div>
+      <div>Level: <span>0</span></div>
+      <div><span>0</span> WPM</div>
+    </div>
     <div id="gameScreen_holder">
-      <div id="correct"></div>
+      <div id="correct" class="hidden"></div>
       <div id="mainScreen">
         <div id="screen_textStream">
+          <div class="stream"> <!--Hold's 11, but go 10 to be safe-->
+            <p>Long name</p>
+            <p>Very Long name</p>
+            <p>Very Very Long name</p>
+            <p>name</p>
+            <p>name</p>
+            <p>name</p>
+            <p>name</p>
+            <p>name</p>
+            <p>name</p>
+            <p>name</p>
+        </div>
+          <div class="stream">Stream 2</div>
         </div>
         <div id="screen_background"></div>
+        <!-- <img src="img/img.jpg"> -->
       </div>
-      <div id="description"></div>
+      <div id="description" class="hidden"></div>
     </div>
-    <div id="input"></div>
+    <textarea id="quoteInput"  class="quote-input" onpaste="return false;" autofocus></textarea>
   </main>
   <footer>
-    <div>Contact Info
+    <!-- <div>Contact Info
       <p>Phone: 555.555.5555</p>
-    </div>
+    </div> -->
   </footer>
 </body>
 </html>
