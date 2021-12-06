@@ -23,7 +23,7 @@ header > h1 {
 main {
   div#dataHolder {
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     div {
       margin: 0 auto 10px auto;
@@ -31,7 +31,7 @@ main {
   }
   div#gameScreen_holder {
     border: 2.5px solid black;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     div#mainScreen {
       // background-color: white;
@@ -40,12 +40,13 @@ main {
       width: 100%;
       min-height: 400px;
       position: relative;
-      background-color: black;
+      // background-color: black;
       div {
         //ALL DIVS IN SCREEN
         min-height: 400px;
         width: 100%;
         display: flex;
+        // border: 1px solid red;
       }
       #screen_textStream {
         background-color: rgba(255, 255, 255, 0.6);
@@ -70,7 +71,7 @@ main {
   }
   textarea {
     display: block;
-    width: 80%;
+    width: 90%;
     margin: 15px auto;
     text-align: center;
     padding: 17.5px 0 0 0;
