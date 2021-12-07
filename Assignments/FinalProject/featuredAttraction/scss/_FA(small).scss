@@ -3,6 +3,12 @@
   display: none;
   transition: 0.25s ease;
 }
+.correct {
+  color: green;
+}
+.incorrect {
+  color: red;
+}
 
 // BODY
 body {
@@ -56,6 +62,12 @@ main {
           display: block;
           justify-content: center;
           text-align: center;
+          p {
+            background-color: rgba(255, 255, 255, 0.5);
+            font-weight: bold;
+            font-size: 1rem; //large 1.15rem
+            // width: auto;
+          }
         }
       }
       #screen_background {

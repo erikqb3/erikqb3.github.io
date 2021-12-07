@@ -4,6 +4,14 @@
   transition: 0.25s ease;
 }
 
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
 body {
   background-color: #339cd5;
 }
@@ -67,6 +75,12 @@ main div#gameScreen_holder div#mainScreen #screen_textStream div.stream {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+main div#gameScreen_holder div#mainScreen #screen_textStream div.stream p {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 main div#gameScreen_holder div#mainScreen #screen_background {
