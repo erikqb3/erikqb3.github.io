@@ -20,7 +20,9 @@ header > h1 {
   font-size: 3rem;
   line-height: 2rem;
   margin: 30px auto 15px auto;
+  display: block;
   span {
+    display: block;
     font-size: 1.25rem;
     color: white;
   }
@@ -39,6 +41,31 @@ main {
     border: 2.5px solid black;
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    div#correct,
+    div#description {
+      background-color: whitesmoke;
+      height: 400px;
+      color: black;
+      // padding: 0 1%;
+    }
+    div#correct {
+      text-align: center;
+      padding: 0;
+      overflow: auto;
+    }
+    div#description {
+      overflow: auto;
+      h3 {
+        margin-bottom: 0;
+        padding: 0 5%;
+      }
+      p {
+        padding: 0 5%;
+        margin-top: 8px;
+        line-height: 1.5rem;
+      }
+    }
     div#mainScreen {
       // background-color: white;
       display: block;
@@ -71,7 +98,7 @@ main {
         }
       }
       #screen_background {
-        background-image: url('https://image.tmdb.org/t/p/w600_and_h900_bestv2/qG3RYlIVpTYclR9TYIsy8p7m7AT.jpg');
+        background-image: url('https://image.tmdb.org/t/p/original/etqr6fOOCXQOgwrQXaKwenTSuzx.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
