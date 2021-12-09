@@ -1,0 +1,8 @@
+@import '_GL(small)';
+
+@media only screen and (min-width: 760px) {
+  @import '_GL(med)';
+}
+@media only screen and (min-width: 1200px) {
+  @import '_GL(big)';
+}

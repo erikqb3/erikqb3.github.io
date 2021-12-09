@@ -356,7 +356,7 @@ p {
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: #282828;
   position: relative;
   min-height: 100vh;
   font-size: 2rem;
@@ -406,7 +406,7 @@ header div#hamburgurButton_holder {
 }
 
 header button {
-  background-color: whitesmoke;
+  background-color: #282828;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
