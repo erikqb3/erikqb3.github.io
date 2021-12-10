@@ -1,3 +1,10 @@
+//variables
+@mixin myFontStyle {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
 .hidden {
   display: none;
 }
@@ -9,9 +16,7 @@ main {
     // grid-column: 2;
     display: flex;
     font-size: 1rem;
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-weight: bold;
+    @include myFontStyle;
     width: 90%;
     margin: 15px auto;
     font-weight: bold;
@@ -33,9 +38,7 @@ main {
   div#dropDown_holder {
     display: inline-block;
     position: relative;
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-weight: bold;
+    @include myFontStyle;
     z-index: 2;
     width: 30%;
     margin-left: 5%;

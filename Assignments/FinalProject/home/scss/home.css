@@ -31,8 +31,9 @@ main > div#table div.object a {
   margin: 0;
   z-index: 1;
   font-family: 'Cormorant Garamond', serif;
-  text-decoration: none;
   font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
   color: white;
   text-shadow: 1.5px 1.5px black;
 }
@@ -63,12 +64,16 @@ main > div#table div.object a:hover div.label {
 }
 
 @media only screen and (min-width: 760px) {
+  main > h1 {
+    font-size: 2.5rem;
+  }
   main > div#table {
     -ms-grid-rows: 400px 200px 200px;
         grid-template-rows: 400px 200px 200px;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     grid-column-gap: 15px;
+    margin-bottom: 150px;
   }
   main > div#table div#FA_holder {
     -ms-grid-column: 1;
@@ -108,13 +113,16 @@ main > div#table div.object a:hover div.label {
 }
 
 @media only screen and (min-width: 1200px) {
+  main > h1 {
+    font-size: 3.5rem;
+  }
   main > div#table {
     grid-column-gap: 15px;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 33% 33% 34%;
         grid-template-rows: 33% 33% 34%;
-    margin: 0px auto 50px auto;
+    margin: 0px auto 200px auto;
     max-height: 500px;
   }
   main > div#table div#FA_holder {

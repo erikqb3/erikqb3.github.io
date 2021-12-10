@@ -1,8 +1,13 @@
+main > h1 {
+  font-size: 2.5rem;
+}
+
 main > div#table {
   // background-color: white;
   grid-template-rows: 400px 200px 200px;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 15px;
+  margin-bottom: 150px;
 
   div#FA_holder {
     grid-column: 1/3;

@@ -1,0 +1,27 @@
+main > form > fieldset {
+  width: 75%;
+  display: block;
+  margin: 30px auto 30px auto;
+}
+
+main > form > fieldset label,
+main > form > fieldset label > input {
+  font-size: 1rem;
+  display: block;
+  cursor: pointer;
+}
+
+main > form > fieldset label {
+  margin: 15px 0;
+}
+
+main > form > fieldset div#buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main > form > fieldset div#buttons label {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=logIn.css.map */

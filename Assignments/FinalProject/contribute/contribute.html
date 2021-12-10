@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../index/imgs/favicon1.png">
   <link href="../index/scss/index.css" rel="stylesheet">
+  <link href="../index/scss/formStuff/form.css" rel="stylesheet">
   <!-- <link href="scss/home.css" rel="stylesheet"> -->
   <script src="../index/index.js" defer></script>
+  <script src="contribute.js" defer></script>
   <title>Fan-Art Carnival</title>
 </head>
 <body>
+  <div id="contentWrap">
   <header>
     <img id="logo" src="../index/imgs/Better Logo.png" id="logo image">
     <div id="hamburgurButton_holder">
@@ -37,7 +40,7 @@
       <label for="gameDescription">Description
         <input type="text" name="gameDescription" id="gameDescription">
       </label>
-      <label for="gamePicture">
+      <label for="gamePicture">Screenshot (optional)
         <input type="file" name="gamePicture" id="gamePicture" accept="image/png, image/jpeg" value="Add Picture">
       </label>
       <label for="playStyle">Play Style: 
@@ -65,11 +68,17 @@
           <option value="historic">Anime/Cartoon</option>
           <option value="spacey">Kid Show</option>
           <option value="spacey">TV Show</option>
+          <option value="other">Other</option>
         </select>
       </label>
+      <div id="buttons">
       <label for="contribute">
         <input type="submit" name="contribute" id="contribute" value="Contribute">
       </label>
+      <label for="goBack">
+        <input type="button" name="goBack" id="goBack" value="Back">
+      </label>
+    </div>
     </fieldset>
   </form>
   </main>
@@ -78,5 +87,6 @@
       <p>Phone: 555.555.5555</p>
     </div>
   </footer>
+</div>
 </body>
 </html>

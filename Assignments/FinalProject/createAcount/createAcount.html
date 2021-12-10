@@ -6,11 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../index/imgs/favicon1.png">
   <link href="../index/scss/index.css" rel="stylesheet">
+  <link href="../index/scss/formStuff/form.css" rel="stylesheet">
+  <!-- <link href="scss/createAccount.css" rel="stylesheet"> -->
   <!-- <link href="scss/home.css" rel="stylesheet"> -->
   <script src="../index/index.js" defer></script>
+  <script src="createAccount.js" defer></script>
   <title>Fan-Art Carnival</title>
 </head>
+
 <body>
+  <div id="contentWrap">
   <header>
     <img id="logo" src="../index/imgs/Better Logo.png" id="logo image">
     <div id="hamburgurButton_holder">
@@ -30,7 +35,10 @@
     <form id="creatAccount_form" method="get" action="../logIn/logIn.html">
     <fieldset>
       <legend>Create Account</legend>
-      <label for="accessInfo">Username or email: 
+      <label for="accessInfo">Email: 
+        <input type="text" name="accessInfo" id="accessInfo" required>
+      </label>
+      <label for="accessInfo">Username: 
         <input type="text" name="accessInfo" id="accessInfo" required>
       </label>
       <label for="newPassword">New Password
@@ -39,9 +47,14 @@
       <label for="confirmPassword">Confirm Password
         <input type="text" name="confirmPassword" id="confirmPassword" required>
       </label>
+      <div id="buttons">
       <label for="createAccount">
         <input type="submit" name="createAccount" id="createAccount" value="Create Account">
       </label>
+      <label for="goBack">
+        <input type="button" name="goBack" id="goBack" value="Back">
+      </label>
+    </div>
     </fieldset>
   </form>
   </main>
@@ -50,5 +63,6 @@
       <p>Phone: 555.555.5555</p>
     </div>
   </footer>
+  </div>
 </body>
 </html>

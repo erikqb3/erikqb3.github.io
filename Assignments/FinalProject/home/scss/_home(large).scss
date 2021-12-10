@@ -2,11 +2,15 @@ body {
   // background-color: orange;
 }
 
+main > h1 {
+  font-size: 3.5rem;
+}
+
 main > div#table {
   grid-column-gap: 15px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 33% 33% 34%;
-  margin: 0px auto 50px auto;
+  margin: 0px auto 200px auto;
   max-height: 500px;
 
   div#FA_holder {

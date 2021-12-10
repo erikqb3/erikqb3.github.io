@@ -1,0 +1,36 @@
+main > form > fieldset {
+  width: 75%;
+  display: block;
+  margin: 30px auto 30px auto;
+  border: 1px solid maroon;
+}
+
+main > form > fieldset legend {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: bold;
+  color: red;
+}
+
+main > form > fieldset label,
+main > form > fieldset label > input,
+main > form > fieldset label > select {
+  font-size: 1rem;
+  display: block;
+  cursor: pointer;
+}
+
+main > form > fieldset label {
+  margin: 15px 0;
+}
+
+main > form > fieldset div#buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main > form > fieldset div#buttons label {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=form.css.map */

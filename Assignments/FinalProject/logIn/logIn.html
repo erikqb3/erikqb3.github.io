@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../index/imgs/favicon1.png">
   <link href="../index/scss/index.css" rel="stylesheet">
+  <link href="../index/scss/formStuff/form.css" rel="stylesheet">
+  <!-- <link href="scss/logIn.css" rel="stylesheet"> -->
   <!-- <link href="scss/home.css" rel="stylesheet"> -->
   <script src="../index/index.js" defer></script>
+  <script src="logIn.js" defer></script>
   <title>Fan-Art Carnival</title>
 </head>
 <body>
+  <div id="contentWrap">
   <header>
     <img id="logo" src="../index/imgs/Better Logo.png" id="logo image">
     <div id="hamburgurButton_holder">
@@ -37,12 +41,14 @@
       <label for="password">Password
         <input type="text" name="password" id="password">
       </label>
+      <div id="buttons">
       <label for="logIn">
         <input type="submit" name="logIn" id="logIn" value="Log In">
       </label>
       <label for="createAccount">
-        <input type="submit" name="createAccount" id="createAccount" value="Create Account">
+        <input type="button" name="createAccount" id="createAccount" value="Create Account">
       </label>
+    </div>
     </fieldset>
   </form>
   </main>
@@ -51,5 +57,6 @@
       <p>Phone: 555.555.5555</p>
     </div>
   </footer>
+</div>
 </body>
 </html>

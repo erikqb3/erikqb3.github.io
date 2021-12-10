@@ -8,9 +8,11 @@
   <link href="../index/scss/index.css" rel="stylesheet">
   <link href="scss/home.css" rel="stylesheet">
   <script src="../index/index.js" defer></script> <!--No Nav-->
+  <script src="home.js" defer></script>
   <title>Fan-Art Carnival</title>
 </head>
-<body>
+<body id="pageContainer">
+  <div id="contentWrap">
   <header>
     <!-- <img id="logo" src="../index/imgs/Logo.png" id="logo image"> -->
     <!-- <h1>Fan-Art Carnival</h1> -->
@@ -28,45 +30,47 @@
       <li><a href="../aboutUs/aboutUs.html">About Us</a></li>
     </ul>
   </nav>
-  <main>
-    <h1>Home</h1>
-    <div id="table">
-      <div id="FA_holder"class="object">
-        <a id="featuredAttraction" class=link href="../featuredAttraction/featuredAttraction.html">
-          <img src="imgs/featuredAttraction.jpg">
-          <div class="label">Featured Attraction</div>
-        </a>
+    <main>
+      <h1>Home</h1>
+      <div id="table">
+        <div id="FA_holder"class="object">
+          <a id="featuredAttraction" class=link href="../featuredAttraction/featuredAttraction.html">
+            <img src="imgs/featuredAttraction.jpg">
+            <div class="label">Featured Attraction</div>
+          </a>
+        </div>
+        <div id="LI_holder"class="object">
+          <a id="logIn" class=link href="../logIn/logIn.html">
+            <img src="imgs/logIn(small).jpg">
+            <div class="label">Log-In</div>
+          </a>
+        </div>
+        <div id="GL_holder"class="object">
+          <a id="gameLibrary" class=link href="../gameLibrary/gameLibrary.html">
+            <img src="imgs/games(small).jpg">
+            <div class="label">Game Library</div>
+          </a>
+        </div>
+        <div id="C_holder"class="object">
+          <a id="contribute" class=link href="../contribute/contribute.html">
+            <img src="imgs/contribute(small).jpg">
+            <div class="label">Contribute</div>
+          </a>
+        </div>
+        <div id="AU_holder"class="object">
+          <a id="logIn" class=link href="../aboutUs/aboutUs.html">
+            <img src="imgs/Picture1.png">
+            <div class="label">About Us</div>
+          </a>
+        </div>
       </div>
-      <div id="LI_holder"class="object">
-        <a id="logIn" class=link href="../logIn/logIn.html">
-          <img src="imgs/logIn(small).jpg">
-          <div class="label">Log-In</div>
-        </a>
-      </div>
-      <div id="GL_holder"class="object">
-        <a id="gameLibrary" class=link href="../gameLibrary/gameLibrary.html">
-          <img src="imgs/games(small).jpg">
-          <div class="label">Game Library</div>
-        </a>
-      </div>
-      <div id="C_holder"class="object">
-        <a id="contribute" class=link href="../contribute/contribute.html">
-          <img src="imgs/contribute(small).jpg">
-          <div class="label">Contribute</div>
-        </a>
-      </div>
-      <div id="AU_holder"class="object">
-        <a id="logIn" class=link href="../aboutUs/aboutUs.html">
-          <img src="imgs/Picture1.png">
-          <div class="label">About Us</div>
-        </a>
-      </div>
-    </div>
-  </main>
+    </main>
+  
   <footer>
     <div>Contact Info
       <p>Phone: 555.555.5555</p>
     </div>
   </footer>
+</div>
 </body>
 </html>

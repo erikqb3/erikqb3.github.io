@@ -1,0 +1,7 @@
+@mixin myFontStyle {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+$myFontStyle: myFontStyle;

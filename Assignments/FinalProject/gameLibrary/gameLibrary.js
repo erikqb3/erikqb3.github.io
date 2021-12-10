@@ -6,6 +6,13 @@ displayAlphaNav();
 createDropDown();
 showDropDown();
 displayGameCards_A();
+checkLoggedIn();
+
+function checkLoggedIn() {
+  // window.onload = console.log(localStorage.getItem("loggedIn"));
+  isLoggedIn = localStorage.getItem("loggedIn");
+  console.log(isLoggedIn);
+}
 
 function displayAlphaNav() {
   let alphaNav = document.getElementById("alphaNav");
@@ -54,6 +61,10 @@ function createDropDown() {
 function showDropDown() {
   let dropDownBtn = document.getElementById("dropDown_button");
   dropDownBtn.addEventListener('mouseover', e=> {
+    dropDownList = document.getElementById("dropDown_list");
+    dropDownList.classList.toggle("hidden");
+  })
+  dropDownBtn.addEventListener('click', e=> {
     dropDownList = document.getElementById("dropDown_list");
     dropDownList.classList.toggle("hidden");
   })

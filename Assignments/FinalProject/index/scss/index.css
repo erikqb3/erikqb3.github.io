@@ -360,6 +360,11 @@ body {
   position: relative;
   min-height: 100vh;
   font-size: 2rem;
+  position: relative;
+}
+
+div#contentWrap {
+  padding-bottom: 100px;
 }
 
 header {
@@ -477,10 +482,11 @@ main h1 {
 footer {
   background-color: maroon;
   display: block;
-  min-height: 50px;
+  height: 100px;
   width: 100%;
-  position: relative;
+  position: absolute;
   bottom: 0;
+  left: 0;
 }
 
 footer div {

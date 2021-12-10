@@ -1,8 +1,8 @@
-@import 'logIn(min)';
+@import 'createAccount(min)';
 
 @media only screen and (min-width: 760px) {
-  @import 'logIn(med)';
+  @import 'createAccount(med)';
 }
 @media only screen and (min-width: 1200px) {
-  @import 'logIn(max)';
+  @import 'createAccount(max)';
 }

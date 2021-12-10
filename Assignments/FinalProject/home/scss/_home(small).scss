@@ -1,3 +1,10 @@
+//variables
+@mixin myFontStyle {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
 main {
   p {
   }
@@ -31,9 +38,8 @@ main > div#table {
       margin: 0;
       z-index: 1;
       // text-decoration: none;
-      font-family: 'Cormorant Garamond', serif;
+      @include myFontStyle;
       text-decoration: none;
-      font-style: italic;
       color: white;
       text-shadow: 1.5px 1.5px black;
     }

@@ -5,9 +5,10 @@ main > form > fieldset {
   // background-color: blue;
   width: 75%;
   display: block;
-  margin: 30px auto 30px auto;
+  margin: 30px auto 230px auto;
   label,
-  label > input {
+  label > input,
+  label > select {
     font-size: 1rem;
     display: block;
     cursor: pointer;
