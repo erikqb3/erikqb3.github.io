@@ -5,6 +5,10 @@
   font-weight: bold;
 }
 
+.hidden {
+  display: none;
+}
+
 main {
   p {
   }
@@ -29,7 +33,7 @@ main > div#table {
     position: relative;
     box-shadow: 2.5px 2.5px 5px black;
     border: 2.5px solid orange;
-
+    font-size: 1.5rem;
     a > img,
     a {
       display: block;
@@ -61,6 +65,38 @@ main > div#table {
         top: 75%;
         transition: 0.4s ease;
       }
+    }
+  }
+}
+
+div#thankYouMessage {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 100%;
+  width: 100%;
+  // display: block;
+  div {
+    // position: absolute;
+    position: relative;
+    top: 15vh;
+    p {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      @include myFontStyle;
+      font-size: 1.75rem;
+      line-height: 2.5rem;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      text-shadow: 0.5px 0.5px maroon;
+    }
+    button {
+      width: 40%;
+      display: block;
+      margin: 30px auto 0 auto;
     }
   }
 }

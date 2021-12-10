@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 main h1,
 main h2,
 main h3 {
@@ -21,6 +25,7 @@ main > div#table div.object {
   -webkit-box-shadow: 2.5px 2.5px 5px black;
           box-shadow: 2.5px 2.5px 5px black;
   border: 2.5px solid orange;
+  font-size: 1.5rem;
 }
 
 main > div#table div.object a > img,
@@ -61,6 +66,48 @@ main > div#table div.object a:hover div.label {
   top: 75%;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+}
+
+div#thankYouMessage {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 100%;
+  width: 100%;
+}
+
+div#thankYouMessage div {
+  position: relative;
+  top: 15vh;
+}
+
+div#thankYouMessage div p {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-shadow: 0.5px 0.5px maroon;
+}
+
+div#thankYouMessage div button {
+  width: 40%;
+  display: block;
+  margin: 30px auto 0 auto;
 }
 
 @media only screen and (min-width: 760px) {
@@ -122,7 +169,7 @@ main > div#table div.object a:hover div.label {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: 33% 33% 34%;
         grid-template-rows: 33% 33% 34%;
-    margin: 0px auto 200px auto;
+    margin: 0px auto 100px auto;
     max-height: 500px;
   }
   main > div#table div#FA_holder {

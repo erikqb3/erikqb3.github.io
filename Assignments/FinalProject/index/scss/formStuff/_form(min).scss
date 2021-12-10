@@ -18,6 +18,8 @@ main > form > fieldset {
   legend {
     @include myFontStyle;
     color: red;
+    padding: 0 10px;
+    font-size: 1.75rem;
     // font-family: $myFontStyle;
   }
   label,

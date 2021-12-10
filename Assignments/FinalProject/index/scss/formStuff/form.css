@@ -10,6 +10,8 @@ main > form > fieldset legend {
   font-style: italic;
   font-weight: bold;
   color: red;
+  padding: 0 10px;
+  font-size: 1.75rem;
 }
 
 main > form > fieldset label,

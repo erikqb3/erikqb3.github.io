@@ -1,5 +1,6 @@
 afterLogIn();
 checkLoggedIn();
+afterContribute();
 // prompt("Hellow Type something") //Cool!
 
 function afterLogIn() {
@@ -24,6 +25,30 @@ function afterLogIn() {
   localStorage.setItem("loggedIn",loggedIn)
   }
 }
+
+function afterContribute() {
+  // console.log("help")
+  let prevPage = document.referrer;
+  let fromVSC = "http://127.0.0.1:5502/Assignments/FinalProject/contribute/contribute.html"
+  let fromPortal = "https://erikqb3.github.io/Assignments/FinalProject/contribute/contribute.html"
+  let thankYou = document.getElementById("thankYouMessage")
+  
+  console.log(prevPage);
+
+  if ((prevPage == fromVSC) || (prevPage == fromPortal)) {
+    thankYou.classList.remove("hidden");
+    console.log("Works")
+  }
+  else {
+    thankYou.classList.add("hidden");
+    console.log("Still Works")
+  }
+  let welcomeBtn = document.getElementById("welcomeBtn");
+  welcomeBtn.addEventListener('click',e=> {
+    thankYou.classList.add("hidden");
+  })
+}
+
 
 function checkLoggedIn() {
   // window.onload = console.log(localStorage.getItem("loggedIn"));
