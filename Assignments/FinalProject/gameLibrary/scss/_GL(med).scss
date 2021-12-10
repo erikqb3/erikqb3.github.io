@@ -1,0 +1,36 @@
+main {
+  div#alphaNav {
+    width: 82%;
+  }
+  div#dropDown_holder {
+    margin-left: 9%;
+    width: 30%;
+  }
+  div#gameCard_holder {
+    width: 82%;
+    div.gameCard {
+      height: 350px;
+      div.section_L {
+        // width: 100%;
+        img {
+          // width: 250px;
+          // height: 250px;
+          margin-bottom: 25px;
+        }
+        h4 {
+          font-size: 1.25rem;
+        }
+      }
+
+      div.section_R {
+        height: 335px;
+        padding: 15px 20px 0 20px;
+        div.gameInfo {
+          p {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+}

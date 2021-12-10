@@ -1,0 +1,38 @@
+main {
+  div#alphaNav {
+    width: 82%;
+    font-size: 1.75rem;
+  }
+  div#dropDown_holder {
+    margin-left: 9%;
+    width: 14.5%;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  div#gameCard_holder {
+    width: 82%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2.5%;
+
+    div.gameCard {
+      div.section_L {
+        // width: 100%;
+        img {
+          width: 12.5vw;
+          height: 12.5vw;
+          margin-bottom: 25px;
+        }
+        h4 {
+          font-size: 1.25rem;
+        }
+      }
+      div.section_R {
+        div.gameInfo {
+          p {
+          }
+        }
+      }
+    }
+  }
+}

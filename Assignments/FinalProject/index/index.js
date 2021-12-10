@@ -1,25 +1,30 @@
-window.onload = (event) => {
-  let lastModified = document.lastModified
-  // document.getElementById('currentdate').textContent = lastModified
+function startingStuff() {
+  window.onload = (event) => {
+    let lastModified = document.lastModified
+  }
+  
+  let hamburger = document.querySelector("#navMenuButton");
+  hamburger.addEventListener('click',toggleNav);
+
+  let startingWindowWidth = window.innerWidth;
+  if (startingWindowWidth > 1200) {
+    document.querySelector('#navBar').classList.remove('hidden');
+  }
+  else {
+    document.querySelector('#navBar').classList.add('hidden');
+  }
+
+
+  let logo = document.getElementById('logo');
+  logo.addEventListener('click', e=> {
+    console.log("hellow")
+    location.href = "../home/index.html";
+  })
 }
 
-let hamburger = document.querySelector("#navMenuButton");
-// console.log(hamburger);
-hamburger.addEventListener('click',toggleNav);
 
 function toggleNav() {
   document.querySelector("#navBar").classList.toggle("hidden");
 }
 
-let startingWindowWidth = window.innerWidth;
-// console.log(startingWindowWidth);
-if (startingWindowWidth > 1200) {
-  // console.log("Hi! I'm Honest!");
-  document.querySelector('#navBar').classList.remove('hidden');
-  // document.querySelector("#navMenuButton").classList.add('hidden');
-  // document.querySelector('#name').setAttribute('text-size','4em');
-}
-else {
-  document.querySelector('#navBar').classList.add('hidden');
-  // ocument.querySelector("#navMenuButton").classList.remove('hidden');
-}
+startingStuff();

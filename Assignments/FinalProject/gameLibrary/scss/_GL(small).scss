@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 main {
   // display: grid;
   // grid-template-columns: 40% 60%;
@@ -5,19 +9,33 @@ main {
     // grid-column: 2;
     display: flex;
     font-size: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: bold;
     width: 90%;
     margin: 15px auto;
     font-weight: bold;
     text-align: center;
     overflow-x: scroll;
+    // color: #f7f052;
+    color: red;
     div.sortingLetter {
       margin: 0 2.5%;
       cursor: pointer;
+      padding: 0.75% 5%;
+    }
+    div.sortingLetter:hover {
+      color: black;
+      background-color: orange;
+      font-weight: bold;
     }
   }
   div#dropDown_holder {
     display: inline-block;
     position: relative;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: bold;
     z-index: 2;
     width: 30%;
     margin-left: 5%;
@@ -30,15 +48,15 @@ main {
       padding-left: 10px;
       background-color: red;
     }
-    ul {
-      display: none;
+    ul#dropDown_list {
+      // display: none;
       width: 100%;
       margin: 0;
       position: absolute;
       font-size: 1rem;
       padding: 0;
       padding-right: 10px;
-
+      color: white;
       background-color: maroon;
       // margin-left: 5%;
       li {
@@ -49,6 +67,11 @@ main {
       }
       li:hover {
         background-color: orange;
+        font-weight: bold;
+      }
+      li:active {
+        background-color: orange;
+        font-weight: bold;
       }
     }
     div#dropDown_button:hover ul#dropDown_list {
@@ -66,39 +89,62 @@ main {
       width: 100%;
       height: 200px;
       margin: 15px 0;
-      background-color: rgba(55, 0, 0, 0.875);
+      background-color: rgb(100, 0, 0);
       display: flex;
       cursor: pointer;
       div.section_L {
-        width: 35%;
-        padding: 0 10px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        border-right: 2px solid grey;
+
+        // padding: 0 10px;
         img {
-          width: 100px;
-          height: 100px;
-          margin-top: 15px;
+          width: 25vw;
+          height: 25vw;
+          margin: 15px auto;
         }
-        div.gameInfo {
-          h4 {
-            color: #f7f052;
-            font-size: 0.75rem;
-            margin: 0;
-          }
-          p {
-            color: #f7f052;
-            font-size: 0.75rem;
-          }
+        h4 {
+          color: #f7f052;
+          font-size: 0.75rem;
+          margin: 0 0 7.5px 0;
         }
+        // div.gameInfo {
+        //   h4 {
+        //     color: #f7f052;
+        //     font-size: 0.75rem;
+        //     margin: 0 0 7.5px 0;
+        //   }
+        //   p {
+        //     color: #f7f052;
+        //     font-size: 0.75rem;
+        //   }
+        // }
       }
       div.section_R {
         padding: 0 10px;
-        width: auto;
+        width: 60%;
         height: 185px;
         padding-top: 15px;
         overflow-y: scroll;
         font-size: 0.75rem;
+        div.gameInfo {
+          display: flex;
+          margin-bottom: 5px;
+          p {
+            color: #f7f052;
+            font-size: 0.75rem;
+            margin-right: 7.5%;
+          }
+        }
       }
       div.section_R:hover {
-        background-color: red;
+        background-color: orange;
+        div.gameInfo > p {
+          color: black;
+        }
       }
     }
   }

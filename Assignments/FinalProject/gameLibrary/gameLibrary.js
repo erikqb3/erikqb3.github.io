@@ -1,5 +1,11 @@
 // unicode a = 97 unicode A = 65
+let SWW = window.innerWidth;
+
+
 displayAlphaNav();
+createDropDown();
+showDropDown();
+displayGameCards_A();
 
 function displayAlphaNav() {
   let alphaNav = document.getElementById("alphaNav");
@@ -18,15 +24,42 @@ function displayAlphaNav() {
   }
 }
 
-function createDropDown() {
 
+function createDropDown() {
+  let drop_button = document.createElement('div');
+  drop_button.id = "dropDown_button";
+  drop_button.textContent = "Sort by:"
+  let drop_List = document.createElement('ul');
+  drop_List.id = "dropDown_list";
+  drop_List.classList.add("hidden");
+
+  let drop_item1 = document.createElement('li');
+  drop_item1.textContent = "Game Title";
+  let drop_item2 = document.createElement('li');
+  drop_item2.textContent = "Creator"
+  let drop_item3 = document.createElement('li');
+  drop_item3.textContent = "Game Style"
+  let drop_item4 = document.createElement('li');
+  drop_item4.textContent = "Genre";
+
+  let drop_holder = document.getElementById('dropDown_holder');
+  drop_holder.appendChild(drop_button);
+  drop_holder.appendChild(drop_List);
+  drop_List.appendChild(drop_item1);
+  drop_List.appendChild(drop_item2);
+  drop_List.appendChild(drop_item3);
+  drop_List.appendChild(drop_item4);
 }
+
 function showDropDown() {
   let dropDownBtn = document.getElementById("dropDown_button");
-  dropDownBtn.addEventListener('')
+  dropDownBtn.addEventListener('mouseover', e=> {
+    dropDownList = document.getElementById("dropDown_list");
+    dropDownList.classList.toggle("hidden");
+  })
 }
 
-function displayGameCards() {
+function displayGameCards_A() {
   let GC_holder = document.getElementById('gameCard_holder');
   let jsonFile  = "../gameLibrary/gamesList.json";
 
@@ -43,7 +76,7 @@ function displayGameCards() {
       info.classList.add('gameInfo');
       let side_R = document.createElement('div');
       side_R.classList.add('section_R');
-      side_R.innerHTML = game.description;
+      // side_R.innerHTML = game.description;
   
   
       let img = document.createElement('img');
@@ -54,6 +87,8 @@ function displayGameCards() {
       author.innerHTML = game.author;
       let date = document.createElement('p');
       date.innerHTML = game.dateAdded;
+      let descript = document.createElement('div')
+      descript.innerHTML = game.description;
       // console.log(jsObject)
 
       GC_holder.appendChild(GC_card);
@@ -61,8 +96,9 @@ function displayGameCards() {
       GC_card.appendChild(side_R);
     
       side_L.appendChild(img);
-      side_L.appendChild(info);
-      info.appendChild(title);
+      side_R.appendChild(info);
+      side_R.appendChild(descript);
+      side_L.appendChild(title);
       info.appendChild(author);
       info.appendChild(date);
 
@@ -76,27 +112,6 @@ function displayGameCards() {
       //   console.log(letter.innerHTML);
       // })
     })
-
-    // let GC_card = document.createElement('div');
-    // GC_card.classList.add('gameCard')
-    // let side_L = document.createElement('div');
-    // side_L.classList.add('section_L');
-    // let info = document.createElement('div');
-    // info.classList.add('gameInfo');
-    // let side_R = document.createElement('div');
-    // side_R.classList.add('section_R');
-    // side_R.innerHTML = game.description;
-
-
-    // let img = document.createElement('img');
-    // img.setAttribute('src',game.picture);
-    // let name = document.createElement('h4');
-    // name.innerHTML = game.aurthor;
-    // let date = document.createElement('p');
-    // date.innerHTML = game.dateAdded
-    // console.log(jsObject)
   })
 
 }
-
-displayGameCards();

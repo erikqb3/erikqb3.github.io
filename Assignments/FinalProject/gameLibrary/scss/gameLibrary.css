@@ -1,23 +1,41 @@
+.hidden {
+  display: none;
+}
+
 main div#alphaNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 1rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: bold;
   width: 90%;
   margin: 15px auto;
   font-weight: bold;
   text-align: center;
   overflow-x: scroll;
+  color: red;
 }
 
 main div#alphaNav div.sortingLetter {
   margin: 0 2.5%;
   cursor: pointer;
+  padding: 0.75% 5%;
+}
+
+main div#alphaNav div.sortingLetter:hover {
+  color: black;
+  background-color: orange;
+  font-weight: bold;
 }
 
 main div#dropDown_holder {
   display: inline-block;
   position: relative;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: bold;
   z-index: 2;
   width: 30%;
   margin-left: 5%;
@@ -31,26 +49,32 @@ main div#dropDown_holder div#dropDown_button {
   background-color: red;
 }
 
-main div#dropDown_holder ul {
-  display: none;
+main div#dropDown_holder ul#dropDown_list {
   width: 100%;
   margin: 0;
   position: absolute;
   font-size: 1rem;
   padding: 0;
   padding-right: 10px;
+  color: white;
   background-color: maroon;
 }
 
-main div#dropDown_holder ul li {
+main div#dropDown_holder ul#dropDown_list li {
   list-style: none;
   display: block;
   width: 100%;
   padding-left: 10px;
 }
 
-main div#dropDown_holder ul li:hover {
+main div#dropDown_holder ul#dropDown_list li:hover {
   background-color: orange;
+  font-weight: bold;
+}
+
+main div#dropDown_holder ul#dropDown_list li:active {
+  background-color: orange;
+  font-weight: bold;
 }
 
 main div#dropDown_holder div#dropDown_button:hover ul#dropDown_list {
@@ -67,7 +91,7 @@ main div#gameCard_holder div.gameCard {
   width: 100%;
   height: 200px;
   margin: 15px 0;
-  background-color: rgba(55, 0, 0, 0.875);
+  background-color: #640000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,37 +99,117 @@ main div#gameCard_holder div.gameCard {
 }
 
 main div#gameCard_holder div.gameCard div.section_L {
-  width: 35%;
-  padding: 0 10px;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 2px solid grey;
 }
 
 main div#gameCard_holder div.gameCard div.section_L img {
-  width: 100px;
-  height: 100px;
-  margin-top: 15px;
+  width: 25vw;
+  height: 25vw;
+  margin: 15px auto;
 }
 
-main div#gameCard_holder div.gameCard div.section_L div.gameInfo h4 {
+main div#gameCard_holder div.gameCard div.section_L h4 {
   color: #f7f052;
   font-size: 0.75rem;
-  margin: 0;
-}
-
-main div#gameCard_holder div.gameCard div.section_L div.gameInfo p {
-  color: #f7f052;
-  font-size: 0.75rem;
+  margin: 0 0 7.5px 0;
 }
 
 main div#gameCard_holder div.gameCard div.section_R {
   padding: 0 10px;
-  width: auto;
+  width: 60%;
   height: 185px;
   padding-top: 15px;
   overflow-y: scroll;
   font-size: 0.75rem;
 }
 
+main div#gameCard_holder div.gameCard div.section_R div.gameInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+main div#gameCard_holder div.gameCard div.section_R div.gameInfo p {
+  color: #f7f052;
+  font-size: 0.75rem;
+  margin-right: 7.5%;
+}
+
 main div#gameCard_holder div.gameCard div.section_R:hover {
-  background-color: red;
+  background-color: orange;
+}
+
+main div#gameCard_holder div.gameCard div.section_R:hover div.gameInfo > p {
+  color: black;
+}
+
+@media only screen and (min-width: 760px) {
+  main div#alphaNav {
+    width: 82%;
+  }
+  main div#dropDown_holder {
+    margin-left: 9%;
+    width: 30%;
+  }
+  main div#gameCard_holder {
+    width: 82%;
+  }
+  main div#gameCard_holder div.gameCard {
+    height: 350px;
+  }
+  main div#gameCard_holder div.gameCard div.section_L img {
+    margin-bottom: 25px;
+  }
+  main div#gameCard_holder div.gameCard div.section_L h4 {
+    font-size: 1.25rem;
+  }
+  main div#gameCard_holder div.gameCard div.section_R {
+    height: 335px;
+    padding: 15px 20px 0 20px;
+  }
+  main div#gameCard_holder div.gameCard div.section_R div.gameInfo p {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main div#alphaNav {
+    width: 82%;
+    font-size: 1.75rem;
+  }
+  main div#dropDown_holder {
+    margin-left: 9%;
+    width: 14.5%;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  main div#gameCard_holder {
+    width: 82%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2.5%;
+  }
+  main div#gameCard_holder div.gameCard div.section_L img {
+    width: 12.5vw;
+    height: 12.5vw;
+    margin-bottom: 25px;
+  }
+  main div#gameCard_holder div.gameCard div.section_L h4 {
+    font-size: 1.25rem;
+  }
 }
 /*# sourceMappingURL=gameLibrary.css.map */

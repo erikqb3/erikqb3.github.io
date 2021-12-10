@@ -356,7 +356,7 @@ p {
 }
 
 body {
-  background-color: #282828;
+  background-color: whitesmoke;
   position: relative;
   min-height: 100vh;
   font-size: 2rem;
@@ -406,7 +406,7 @@ header div#hamburgurButton_holder {
 }
 
 header button {
-  background-color: #282828;
+  background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -467,7 +467,7 @@ nav ul li a:active {
 main h1 {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  color: maroon;
+  color: red;
   margin: 15px 0 0 0;
   padding: 0;
   font-size: 2.15rem;
