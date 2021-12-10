@@ -1,0 +1,8 @@
+@import 'logIn(min)';
+
+@media only screen and (min-width: 760px) {
+  @import 'logIn(med)';
+}
+@media only screen and (min-width: 1200px) {
+  @import 'log(n(max)';
+}

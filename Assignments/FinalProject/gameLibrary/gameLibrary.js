@@ -38,9 +38,9 @@ function createDropDown() {
   let drop_item2 = document.createElement('li');
   drop_item2.textContent = "Creator"
   let drop_item3 = document.createElement('li');
-  drop_item3.textContent = "Game Style"
+  drop_item3.textContent = "Play Style"
   let drop_item4 = document.createElement('li');
-  drop_item4.textContent = "Genre";
+  drop_item4.textContent = "Fan-Art Style";
 
   let drop_holder = document.getElementById('dropDown_holder');
   drop_holder.appendChild(drop_button);

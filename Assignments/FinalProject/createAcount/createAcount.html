@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../index/imgs/favicon.png">
+  <link rel="shortcut icon" href="../index/imgs/favicon1.png">
   <link href="../index/scss/index.css" rel="stylesheet">
   <!-- <link href="scss/home.css" rel="stylesheet"> -->
   <script src="../index/index.js" defer></script>
@@ -27,16 +27,23 @@
     </ul>
   </nav>
   <main>
-    <div id="gameScreen_holder">
-      <div id="correct"></div>
-      <div id="mainScreen">
-        <div id="screen_textStream">
-        </div>
-        <div id="screen_background"></div>
-      </div>
-      <div id="description"></div>
-    </div>
-    <div id="input"></div>
+    <form id="creatAccount_form" method="get" action="../logIn/logIn.html">
+    <fieldset>
+      <legend>Create Account</legend>
+      <label for="accessInfo">Username or email: 
+        <input type="text" name="accessInfo" id="accessInfo" required>
+      </label>
+      <label for="newPassword">New Password
+        <input type="text" name="newPassword" id="newPassword" required>
+      </label>
+      <label for="confirmPassword">Confirm Password
+        <input type="text" name="confirmPassword" id="confirmPassword" required>
+      </label>
+      <label for="createAccount">
+        <input type="submit" name="createAccount" id="createAccount" value="Create Account">
+      </label>
+    </fieldset>
+  </form>
   </main>
   <footer>
     <div>Contact Info

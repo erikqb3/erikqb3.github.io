@@ -390,6 +390,7 @@ header img#logo {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
+  cursor: pointer;
 }
 
 header div#hamburgurButton_holder {

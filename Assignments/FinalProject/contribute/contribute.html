@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../index/imgs/favicon.png">
+  <link rel="shortcut icon" href="../index/imgs/favicon1.png">
   <link href="../index/scss/index.css" rel="stylesheet">
   <!-- <link href="scss/home.css" rel="stylesheet"> -->
   <script src="../index/index.js" defer></script>
@@ -27,16 +27,51 @@
     </ul>
   </nav>
   <main>
-    <div id="gameScreen_holder">
-      <div id="correct"></div>
-      <div id="mainScreen">
-        <div id="screen_textStream">
-        </div>
-        <div id="screen_background"></div>
-      </div>
-      <div id="description"></div>
-    </div>
-    <div id="input"></div>
+
+    <form id="contribute_form" method="get" action="../home/index.html">
+    <fieldset>
+      <legend>Contribute</legend>
+      <label for="gameTitle">Game Title 
+        <input type="text" name="gameTitle" id="gameTitle" required>
+      </label>
+      <label for="gameDescription">Description
+        <input type="text" name="gameDescription" id="gameDescription">
+      </label>
+      <label for="gamePicture">
+        <input type="file" name="gamePicture" id="gamePicture" accept="image/png, image/jpeg" value="Add Picture">
+      </label>
+      <label for="playStyle">Play Style: 
+        <select name = "playStyle">
+          <option value="" selected disabled>Select Style</option>
+          <option value="adventure">Adventure</option>
+          <option value="combat">Combat</option>
+          <option value="fps">FPS</option>
+          <option value="racing">Racing</option>
+          <option value="puzzle">Puzzle</option>
+          <option value="creative">Creative</option>
+          <option value="creative">Rythm</option>
+          <option value="sporty">Sporty</option>
+          <option value="party">Party</option>
+          <option value="party">Turn based</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+      <label for="fanArtStyle">Fan-Art Style: 
+        <select name = "fanArtStyle">
+          <option value="" selected disabled>Select Style</option>
+          <option value="fictional">Video Game Series</option>
+          <option value="fantasy">Movie</option>
+          <option value="futuristic">Manga/Comic</option>
+          <option value="historic">Anime/Cartoon</option>
+          <option value="spacey">Kid Show</option>
+          <option value="spacey">TV Show</option>
+        </select>
+      </label>
+      <label for="contribute">
+        <input type="submit" name="contribute" id="contribute" value="Contribute">
+      </label>
+    </fieldset>
+  </form>
   </main>
   <footer>
     <div>Contact Info
