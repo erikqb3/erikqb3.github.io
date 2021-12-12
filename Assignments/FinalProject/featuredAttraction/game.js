@@ -418,8 +418,18 @@ function endGame(ticker){
     // console.log(streamArray[i].childElementCount)
     if (streamArray[i].childElementCount >= 10) {
       clearInterval(ticker)
+      closeMessage()
     }
   }
 }
 
+
+function closeMessage() {
+  let messageBtn = document.getElementById("gameMessage");
+  messageBtn.addEventListener('click',e=> {
+    message = document.getElementById("gameMessage");
+    message.classList.toggle("hidden");
+  
+  })
+}
 runGame();

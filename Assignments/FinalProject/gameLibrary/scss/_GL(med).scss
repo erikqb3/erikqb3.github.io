@@ -1,6 +1,7 @@
 main {
   div#alphaNav {
     width: 82%;
+    font-size: 1.5rem;
   }
   div#dropDown_holder {
     margin-left: 9%;
@@ -16,6 +17,7 @@ main {
           // width: 250px;
           // height: 250px;
           margin-bottom: 25px;
+          border: 2px solid orange;
         }
         h4 {
           font-size: 1.25rem;
@@ -31,6 +33,21 @@ main {
           }
         }
       }
+    }
+  }
+}
+div#gameMessage {
+  div {
+    top: 20vh;
+    p {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
+    button {
+      width: 40%;
+      display: block;
+      font-size: 1.25rem;
+      line-height: 2rem;
     }
   }
 }

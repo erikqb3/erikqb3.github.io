@@ -1,0 +1,22 @@
+main > div#mainContent {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  width: 80%;
+  margin: 30px auto 0 auto;
+}
+
+@media only screen and (min-width: 760px) {
+  main > div#mainContent {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 80%;
+    margin: 30px auto 0 auto;
+  }
+}
+/*# sourceMappingURL=aboutUs.css.map */

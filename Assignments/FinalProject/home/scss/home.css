@@ -78,7 +78,8 @@ div#thankYouMessage {
 }
 
 div#thankYouMessage div {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   top: 15vh;
 }
 
@@ -105,6 +106,9 @@ div#thankYouMessage div p {
 }
 
 div#thankYouMessage div button {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: bold;
   width: 40%;
   display: block;
   margin: 30px auto 0 auto;
@@ -156,6 +160,18 @@ div#thankYouMessage div button {
     grid-column: 2/3;
     -ms-grid-row: 3;
     grid-row: 3;
+  }
+  div#thankYouMessage div {
+    top: 25vh;
+  }
+  div#thankYouMessage div p {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  div#thankYouMessage div button {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    width: 60%;
   }
 }
 
@@ -209,6 +225,19 @@ div#thankYouMessage div button {
     grid-column: 4/5;
     -ms-grid-row: 3;
     grid-row: 3;
+  }
+  div#thankYouMessage div {
+    top: 25vh;
+  }
+  div#thankYouMessage div p {
+    font-size: 3rem;
+    line-height: 4rem;
+    width: 60%;
+  }
+  div#thankYouMessage div button {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    width: 30%;
   }
 }
 /*# sourceMappingURL=home.css.map */

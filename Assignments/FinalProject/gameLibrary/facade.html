@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../index/imgs/favicon.png">
+  <link rel="shortcut icon" href="../index/imgs/favicon1.png">
   <link href="../index/scss/index.css" rel="stylesheet">
-  <link href="scss/aboutUs.css" rel="stylesheet">
+  <link href="../gameLibrary/scss/gameLibrary.css" rel="stylesheet">
   <!-- <link href="scss/home.css" rel="stylesheet"> -->
   <script src="../index/index.js" defer></script>
-  <title>Fan-Art Carnival</title>
+  <script src="facade.js" defer></script>
+  <title>Fan-Art Carnival: Facade Game</title>
 </head>
 <body>
   <div id="contentWrap">
@@ -29,8 +30,10 @@
     </ul>
   </nav>
   <main>
-    <div id="mainContent">
-      Welcome!<br>The purpose of this website is to display examples of my fan-art based, portfolio projects that have entertaining interactions involve. Those who have registered accounts are allowed the privilege of adding project games of their own as samples of their personal portfolio work.
+    <div id="gameMessage">
+      <div>
+        <p>Welcome to <span>The Facade Game!</span> The rules of this game is simple: go back to the "Game Library" page and click on a different game (one that wasn't made up to act as filler content). Figure out which games are real and which ones are facades (like the game you clicked on that sent you to this page. Ha!)</p>
+        <button id="welcomeBtn">Try Again</button>
     </div>
   </main>
   <footer>

@@ -1,0 +1,7 @@
+main > div#mainContent {
+  @include myFontStyle;
+  font-size: 2rem;
+  line-height: 3rem;
+  width: 80%;
+  margin: 30px auto 0 auto;
+}

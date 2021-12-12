@@ -17,7 +17,7 @@ function afterLogIn() {
   logInLabel.innerHTML = "Your Works"
 
   //change tab label
-  let logInTab = document.getElementById("navBar").children[0].children[1];
+  let logInTab = document.getElementById("navBar").children[0].children[1].children[0];
   logInTab.innerHTML = "Your Works"
 
   // Logged In = True

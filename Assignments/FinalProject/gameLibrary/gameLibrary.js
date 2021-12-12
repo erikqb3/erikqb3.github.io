@@ -1,7 +1,7 @@
 // unicode a = 97 unicode A = 65
 let SWW = window.innerWidth;
 
-
+closeMessage();
 displayAlphaNav();
 createDropDown();
 showDropDown();
@@ -45,9 +45,11 @@ function createDropDown() {
   let drop_item2 = document.createElement('li');
   drop_item2.textContent = "Creator"
   let drop_item3 = document.createElement('li');
-  drop_item3.textContent = "Play Style"
+  drop_item3.textContent = "Date Contributed"
   let drop_item4 = document.createElement('li');
-  drop_item4.textContent = "Fan-Art Style";
+  drop_item4.textContent = "Play Style"
+  let drop_item5 = document.createElement('li');
+  drop_item5.textContent = "Fan-Art Style";
 
   let drop_holder = document.getElementById('dropDown_holder');
   drop_holder.appendChild(drop_button);
@@ -56,6 +58,7 @@ function createDropDown() {
   drop_List.appendChild(drop_item2);
   drop_List.appendChild(drop_item3);
   drop_List.appendChild(drop_item4);
+  drop_List.appendChild(drop_item5);
 }
 
 function showDropDown() {
@@ -125,4 +128,13 @@ function displayGameCards_A() {
     })
   })
 
+}
+
+function closeMessage() {
+  let messageBtn = document.getElementById("gameMessage");
+  messageBtn.addEventListener('click',e=> {
+    message = document.getElementById("gameMessage");
+    message.classList.add("hidden");
+  
+  })
 }

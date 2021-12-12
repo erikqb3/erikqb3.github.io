@@ -78,8 +78,8 @@ div#thankYouMessage {
   width: 100%;
   // display: block;
   div {
-    // position: absolute;
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
     top: 15vh;
     p {
       width: 80%;
@@ -94,6 +94,7 @@ div#thankYouMessage {
       text-shadow: 0.5px 0.5px maroon;
     }
     button {
+      @include myFontStyle;
       width: 40%;
       display: block;
       margin: 30px auto 0 auto;

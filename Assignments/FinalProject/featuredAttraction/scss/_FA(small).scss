@@ -1,4 +1,9 @@
 // MISC
+@mixin myFontStyle {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: bold;
+}
 .hidden {
   display: none;
   transition: 0.25s ease;
@@ -114,5 +119,44 @@ main {
     margin: 15px auto;
     text-align: center;
     padding: 17.5px 0 0 0;
+  }
+}
+
+div#gameMessage {
+  // position: -webkit-sticky;
+  // position: sticky;
+  position: absolute;
+  top: 0;
+  z-index: 6;
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 100%;
+  width: 100%;
+  // display: block;
+  div {
+    position: -webkit-sticky;
+    position: sticky;
+    // position: relative;
+    top: 10vh;
+    // left: 0;
+    p {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      @include myFontStyle;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      text-shadow: 0.5px 0.5px maroon;
+    }
+    button {
+      @include myFontStyle;
+      width: 40%;
+      display: block;
+      font-size: 1.25rem;
+      line-height: 2rem;
+      margin: 30px auto 0 auto;
+    }
   }
 }

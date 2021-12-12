@@ -19,7 +19,6 @@ main {
     @include myFontStyle;
     width: 90%;
     margin: 15px auto;
-    font-weight: bold;
     text-align: center;
     overflow-x: scroll;
     // color: #f7f052;
@@ -94,6 +93,7 @@ main {
       margin: 15px 0;
       background-color: rgb(100, 0, 0);
       display: flex;
+      border: 2px solid black;
       cursor: pointer;
       div.section_L {
         width: 40%;
@@ -108,11 +108,13 @@ main {
           width: 25vw;
           height: 25vw;
           margin: 15px auto;
+          border: 1px solid orange;
         }
         h4 {
           color: #f7f052;
           font-size: 0.75rem;
           margin: 0 0 7.5px 0;
+          text-align: center;
         }
         // div.gameInfo {
         //   h4 {
@@ -138,17 +140,62 @@ main {
           margin-bottom: 5px;
           p {
             color: #f7f052;
-            font-size: 0.75rem;
+            font-size: 1rem;
             margin-right: 7.5%;
           }
+        }
+        div {
+          color: white;
+          font-size: 1rem;
+          line-height: 2rem;
         }
       }
       div.section_R:hover {
         background-color: orange;
-        div.gameInfo > p {
+        div.gameInfo > p,
+        div {
           color: black;
         }
       }
+    }
+  }
+}
+
+div#gameMessage {
+  // position: -webkit-sticky;
+  // position: sticky;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 100%;
+  width: 100%;
+  // display: block;
+  div {
+    position: -webkit-sticky;
+    position: sticky;
+    // position: relative;
+    top: 10vh;
+    // left: 0;
+    p {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      @include myFontStyle;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      text-shadow: 0.5px 0.5px maroon;
+    }
+    button {
+      @include myFontStyle;
+      width: 40%;
+      display: block;
+      font-size: 1.25rem;
+      line-height: 2rem;
+      margin: 30px auto 0 auto;
     }
   }
 }

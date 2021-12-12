@@ -36,3 +36,19 @@ main {
     }
   }
 }
+div#gameMessage {
+  div {
+    top: 20vh;
+    p {
+      width: 60%;
+      font-size: 1.5rem;
+      line-height: 3rem;
+    }
+    button {
+      width: 30%;
+      display: block;
+      font-size: 1.25rem;
+      line-height: 2rem;
+    }
+  }
+}

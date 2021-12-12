@@ -12,7 +12,6 @@ main div#alphaNav {
   font-weight: bold;
   width: 90%;
   margin: 15px auto;
-  font-weight: bold;
   text-align: center;
   overflow-x: scroll;
   color: red;
@@ -95,6 +94,7 @@ main div#gameCard_holder div.gameCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 2px solid black;
   cursor: pointer;
 }
 
@@ -117,12 +117,14 @@ main div#gameCard_holder div.gameCard div.section_L img {
   width: 25vw;
   height: 25vw;
   margin: 15px auto;
+  border: 1px solid orange;
 }
 
 main div#gameCard_holder div.gameCard div.section_L h4 {
   color: #f7f052;
   font-size: 0.75rem;
   margin: 0 0 7.5px 0;
+  text-align: center;
 }
 
 main div#gameCard_holder div.gameCard div.section_R {
@@ -143,21 +145,77 @@ main div#gameCard_holder div.gameCard div.section_R div.gameInfo {
 
 main div#gameCard_holder div.gameCard div.section_R div.gameInfo p {
   color: #f7f052;
-  font-size: 0.75rem;
+  font-size: 1rem;
   margin-right: 7.5%;
+}
+
+main div#gameCard_holder div.gameCard div.section_R div {
+  color: white;
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
 main div#gameCard_holder div.gameCard div.section_R:hover {
   background-color: orange;
 }
 
-main div#gameCard_holder div.gameCard div.section_R:hover div.gameInfo > p {
+main div#gameCard_holder div.gameCard div.section_R:hover div.gameInfo > p,
+main div#gameCard_holder div.gameCard div.section_R:hover div {
   color: black;
+}
+
+div#gameMessage {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.75);
+  height: 100%;
+  width: 100%;
+}
+
+div#gameMessage div {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10vh;
+}
+
+div#gameMessage div p {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-shadow: 0.5px 0.5px maroon;
+}
+
+div#gameMessage div button {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: bold;
+  width: 40%;
+  display: block;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin: 30px auto 0 auto;
 }
 
 @media only screen and (min-width: 760px) {
   main div#alphaNav {
     width: 82%;
+    font-size: 1.5rem;
   }
   main div#dropDown_holder {
     margin-left: 9%;
@@ -171,6 +229,7 @@ main div#gameCard_holder div.gameCard div.section_R:hover div.gameInfo > p {
   }
   main div#gameCard_holder div.gameCard div.section_L img {
     margin-bottom: 25px;
+    border: 2px solid orange;
   }
   main div#gameCard_holder div.gameCard div.section_L h4 {
     font-size: 1.25rem;
@@ -181,6 +240,19 @@ main div#gameCard_holder div.gameCard div.section_R:hover div.gameInfo > p {
   }
   main div#gameCard_holder div.gameCard div.section_R div.gameInfo p {
     font-size: 1.25rem;
+  }
+  div#gameMessage div {
+    top: 20vh;
+  }
+  div#gameMessage div p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  div#gameMessage div button {
+    width: 40%;
+    display: block;
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
 }
 
@@ -210,6 +282,20 @@ main div#gameCard_holder div.gameCard div.section_R:hover div.gameInfo > p {
   }
   main div#gameCard_holder div.gameCard div.section_L h4 {
     font-size: 1.25rem;
+  }
+  div#gameMessage div {
+    top: 20vh;
+  }
+  div#gameMessage div p {
+    width: 60%;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  div#gameMessage div button {
+    width: 30%;
+    display: block;
+    font-size: 1.25rem;
+    line-height: 2rem;
   }
 }
 /*# sourceMappingURL=gameLibrary.css.map */

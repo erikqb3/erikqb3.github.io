@@ -1,0 +1,8 @@
+@import 'aboutUs(min)';
+
+@media only screen and (min-width: 760px) {
+  @import 'aboutUs(med)';
+}
+@media only screen and (min-width: 1200px) {
+  @import 'aboutUs(max)';
+}
